@@ -15,6 +15,7 @@
 		3A29C4071A43479500A99F8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4061A43479500A99F8F /* Images.xcassets */; };
 		3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4081A43479500A99F8F /* LaunchScreen.xib */; };
 		3A29C4161A43479500A99F8F /* MyFutureHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */; };
+		3A29C4221A43583D00A99F8F /* gitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4211A43583D00A99F8F /* gitter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		3A29C40F1A43479500A99F8F /* MyFutureHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFutureHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A29C4141A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFutureHomeTests.m; sourceTree = "<group>"; };
+		3A29C4211A43583D00A99F8F /* gitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitter.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				3A29C4061A43479500A99F8F /* Images.xcassets */,
 				3A29C4081A43479500A99F8F /* LaunchScreen.xib */,
 				3A29C3FD1A43479500A99F8F /* MyFutureHome.xcdatamodeld */,
+				3A29C4211A43583D00A99F8F /* gitter.png */,
 				3A29C3F61A43479500A99F8F /* Supporting Files */,
 			);
 			path = MyFutureHome;
@@ -205,6 +208,7 @@
 				3A29C4051A43479500A99F8F /* Main.storyboard in Resources */,
 				3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */,
 				3A29C4071A43479500A99F8F /* Images.xcassets in Resources */,
+				3A29C4221A43583D00A99F8F /* gitter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
