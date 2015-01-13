@@ -16,6 +16,9 @@
 		3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4081A43479500A99F8F /* LaunchScreen.xib */; };
 		3A29C4161A43479500A99F8F /* MyFutureHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */; };
 		3A29C4221A43583D00A99F8F /* gitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4211A43583D00A99F8F /* gitter.png */; };
+		3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */; };
+		3A892A491A5C465B00370BC8 /* UIViewController+MyFBConnecter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A892A481A5C465B00370BC8 /* UIViewController+MyFBConnecter.m */; };
+		3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A892A4E1A5C48E000370BC8 /* FBLogin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,11 @@
 		3A29C4141A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFutureHomeTests.m; sourceTree = "<group>"; };
 		3A29C4211A43583D00A99F8F /* gitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitter.png; sourceTree = "<group>"; };
+		3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		3A892A471A5C465B00370BC8 /* UIViewController+MyFBConnecter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MyFBConnecter.h"; sourceTree = "<group>"; };
+		3A892A481A5C465B00370BC8 /* UIViewController+MyFBConnecter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MyFBConnecter.m"; sourceTree = "<group>"; };
+		3A892A4D1A5C48E000370BC8 /* FBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLogin.h; path = ../FBLogin.h; sourceTree = "<group>"; };
+		3A892A4E1A5C48E000370BC8 /* FBLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLogin.m; path = ../FBLogin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +76,7 @@
 		3A29C3EA1A43479500A99F8F = {
 			isa = PBXGroup;
 			children = (
+				3A892A461A5C3DDE00370BC8 /* Frameworks */,
 				3A29C3F51A43479500A99F8F /* MyFutureHome */,
 				3A29C4121A43479500A99F8F /* MyFutureHomeTests */,
 				3A29C3F41A43479500A99F8F /* Products */,
@@ -85,11 +95,15 @@
 		3A29C3F51A43479500A99F8F /* MyFutureHome */ = {
 			isa = PBXGroup;
 			children = (
+				3A892A4D1A5C48E000370BC8 /* FBLogin.h */,
+				3A892A4E1A5C48E000370BC8 /* FBLogin.m */,
 				3A29C3FA1A43479500A99F8F /* AppDelegate.h */,
 				3A29C3FB1A43479500A99F8F /* AppDelegate.m */,
 				3A29C4001A43479500A99F8F /* ViewController.h */,
 				3A29C4011A43479500A99F8F /* ViewController.m */,
 				3A29C4031A43479500A99F8F /* Main.storyboard */,
+				3A892A471A5C465B00370BC8 /* UIViewController+MyFBConnecter.h */,
+				3A892A481A5C465B00370BC8 /* UIViewController+MyFBConnecter.m */,
 				3A29C4061A43479500A99F8F /* Images.xcassets */,
 				3A29C4081A43479500A99F8F /* LaunchScreen.xib */,
 				3A29C3FD1A43479500A99F8F /* MyFutureHome.xcdatamodeld */,
@@ -123,6 +137,14 @@
 				3A29C4141A43479500A99F8F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A892A461A5C3DDE00370BC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +251,9 @@
 				3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */,
 				3A29C3F91A43479500A99F8F /* main.m in Sources */,
 				3A29C4021A43479500A99F8F /* ViewController.m in Sources */,
+				3A892A491A5C465B00370BC8 /* UIViewController+MyFBConnecter.m in Sources */,
 				3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */,
+				3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyFutureHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +389,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyFutureHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +452,7 @@
 				3A29C41B1A43479500A99F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A29C41C1A43479500A99F8F /* Build configuration list for PBXNativeTarget "MyFutureHomeTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +461,7 @@
 				3A29C41E1A43479500A99F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
