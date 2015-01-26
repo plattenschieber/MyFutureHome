@@ -1,1082 +1,562 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>2DCD16A2FFE20450CE928B85</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MyFutureHome.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3EA1A43479500A99F8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A892A461A5C3DDE00370BC8</string>
-				<string>3A29C3F51A43479500A99F8F</string>
-				<string>3A29C4121A43479500A99F8F</string>
-				<string>3A29C3F41A43479500A99F8F</string>
-				<string>E6BD28091A5E8DA0BF9F07C9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3EB1A43479500A99F8F</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0610</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>SI2</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>3A29C3F21A43479500A99F8F</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-					</dict>
-					<key>3A29C40E1A43479500A99F8F</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-						<key>TestTargetID</key>
-						<string>3A29C3F21A43479500A99F8F</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>3A29C3EE1A43479500A99F8F</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>3A29C3EA1A43479500A99F8F</string>
-			<key>productRefGroup</key>
-			<string>3A29C3F41A43479500A99F8F</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>3A29C3F21A43479500A99F8F</string>
-				<string>3A29C40E1A43479500A99F8F</string>
-			</array>
-		</dict>
-		<key>3A29C3EE1A43479500A99F8F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3A29C4171A43479500A99F8F</string>
-				<string>3A29C4181A43479500A99F8F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3A29C3EF1A43479500A99F8F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3A29C3FC1A43479500A99F8F</string>
-				<string>3A29C3F91A43479500A99F8F</string>
-				<string>3A29C4021A43479500A99F8F</string>
-				<string>3A29C3FF1A43479500A99F8F</string>
-				<string>3A892A4F1A5C48E000370BC8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3A29C3F01A43479500A99F8F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3A892A451A5C3DB300370BC8</string>
-				<string>7DA209B48929F08841F2F990</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3A29C3F11A43479500A99F8F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3A29C4051A43479500A99F8F</string>
-				<string>3A29C40A1A43479500A99F8F</string>
-				<string>3A29C4071A43479500A99F8F</string>
-				<string>3A29C4221A43583D00A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3A29C3F21A43479500A99F8F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3A29C4191A43479500A99F8F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>477AE74CE00C217B0472B44F</string>
-				<string>3A29C3EF1A43479500A99F8F</string>
-				<string>3A29C3F01A43479500A99F8F</string>
-				<string>3A29C3F11A43479500A99F8F</string>
-				<string>C0BE392C295A983542A89302</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MyFutureHome</string>
-			<key>productName</key>
-			<string>MyFutureHome</string>
-			<key>productReference</key>
-			<string>3A29C3F31A43479500A99F8F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>3A29C3F31A43479500A99F8F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MyFutureHome.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3A29C3F41A43479500A99F8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A29C3F31A43479500A99F8F</string>
-				<string>3A29C40F1A43479500A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3F51A43479500A99F8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A892A4D1A5C48E000370BC8</string>
-				<string>3A892A4E1A5C48E000370BC8</string>
-				<string>3A29C3FA1A43479500A99F8F</string>
-				<string>3A29C3FB1A43479500A99F8F</string>
-				<string>3A29C4001A43479500A99F8F</string>
-				<string>3A29C4011A43479500A99F8F</string>
-				<string>3A29C4031A43479500A99F8F</string>
-				<string>3A29C4061A43479500A99F8F</string>
-				<string>3A29C4081A43479500A99F8F</string>
-				<string>3A29C3FD1A43479500A99F8F</string>
-				<string>3A29C4211A43583D00A99F8F</string>
-				<string>3A29C3F61A43479500A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MyFutureHome</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3F61A43479500A99F8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A29C3F71A43479500A99F8F</string>
-				<string>3A29C3F81A43479500A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3F71A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3F81A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3F91A43479500A99F8F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A29C3F81A43479500A99F8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A29C3FA1A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3FB1A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3FC1A43479500A99F8F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A29C3FB1A43479500A99F8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A29C3FD1A43479500A99F8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A29C3FE1A43479500A99F8F</string>
-			</array>
-			<key>currentVersion</key>
-			<string>3A29C3FE1A43479500A99F8F</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>MyFutureHome.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>3A29C3FE1A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>MyFutureHome.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C3FF1A43479500A99F8F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A29C3FD1A43479500A99F8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A29C4001A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4011A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4021A43479500A99F8F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A29C4011A43479500A99F8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A29C4031A43479500A99F8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A29C4041A43479500A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4041A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4051A43479500A99F8F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A29C4031A43479500A99F8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A29C4061A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4071A43479500A99F8F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A29C4061A43479500A99F8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A29C4081A43479500A99F8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A29C4091A43479500A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4091A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C40A1A43479500A99F8F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A29C4081A43479500A99F8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A29C40B1A43479500A99F8F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3A29C4161A43479500A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3A29C40C1A43479500A99F8F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3A29C40D1A43479500A99F8F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3A29C40E1A43479500A99F8F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3A29C41C1A43479500A99F8F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>3A29C40B1A43479500A99F8F</string>
-				<string>3A29C40C1A43479500A99F8F</string>
-				<string>3A29C40D1A43479500A99F8F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3A29C4111A43479500A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MyFutureHomeTests</string>
-			<key>productName</key>
-			<string>MyFutureHomeTests</string>
-			<key>productReference</key>
-			<string>3A29C40F1A43479500A99F8F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>3A29C40F1A43479500A99F8F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MyFutureHomeTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3A29C4101A43479500A99F8F</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3A29C3EB1A43479500A99F8F</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>3A29C3F21A43479500A99F8F</string>
-			<key>remoteInfo</key>
-			<string>MyFutureHome</string>
-		</dict>
-		<key>3A29C4111A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>3A29C3F21A43479500A99F8F</string>
-			<key>targetProxy</key>
-			<string>3A29C4101A43479500A99F8F</string>
-		</dict>
-		<key>3A29C4121A43479500A99F8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A29C4151A43479500A99F8F</string>
-				<string>3A29C4131A43479500A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MyFutureHomeTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4131A43479500A99F8F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A29C4141A43479500A99F8F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4141A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4151A43479500A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MyFutureHomeTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4161A43479500A99F8F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A29C4151A43479500A99F8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A29C4171A43479500A99F8F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3A29C4181A43479500A99F8F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3A29C4191A43479500A99F8F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3A29C41A1A43479500A99F8F</string>
-				<string>3A29C41B1A43479500A99F8F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3A29C41A1A43479500A99F8F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B5851EBF0CF9D026525C34C4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MyFutureHome/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3A29C41B1A43479500A99F8F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2DCD16A2FFE20450CE928B85</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MyFutureHome/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3A29C41C1A43479500A99F8F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3A29C41D1A43479500A99F8F</string>
-				<string>3A29C41E1A43479500A99F8F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3A29C41D1A43479500A99F8F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MyFutureHomeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/MyFutureHome.app/MyFutureHome</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3A29C41E1A43479500A99F8F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MyFutureHomeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/MyFutureHome.app/MyFutureHome</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3A29C4211A43583D00A99F8F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>gitter.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A29C4221A43583D00A99F8F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A29C4211A43583D00A99F8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A892A441A5C3DB300370BC8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>FacebookSDK.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A892A451A5C3DB300370BC8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A892A441A5C3DB300370BC8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A892A461A5C3DDE00370BC8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A892A441A5C3DB300370BC8</string>
-				<string>864B9D51B8F6B2D7F220C11C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A892A4D1A5C48E000370BC8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FBLogin.h</string>
-			<key>path</key>
-			<string>../FBLogin.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A892A4E1A5C48E000370BC8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FBLogin.m</string>
-			<key>path</key>
-			<string>../FBLogin.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A892A4F1A5C48E000370BC8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A892A4E1A5C48E000370BC8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>477AE74CE00C217B0472B44F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>7DA209B48929F08841F2F990</key>
-		<dict>
-			<key>fileRef</key>
-			<string>864B9D51B8F6B2D7F220C11C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>864B9D51B8F6B2D7F220C11C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-MyFutureHome.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B5851EBF0CF9D026525C34C4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MyFutureHome.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0BE392C295A983542A89302</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E6BD28091A5E8DA0BF9F07C9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B5851EBF0CF9D026525C34C4</string>
-				<string>2DCD16A2FFE20450CE928B85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>3A29C3EB1A43479500A99F8F</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A29C3F91A43479500A99F8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C3F81A43479500A99F8F /* main.m */; };
+		3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C3FB1A43479500A99F8F /* AppDelegate.m */; };
+		3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C3FD1A43479500A99F8F /* MyFutureHome.xcdatamodeld */; };
+		3A29C4021A43479500A99F8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4011A43479500A99F8F /* ViewController.m */; };
+		3A29C4051A43479500A99F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4031A43479500A99F8F /* Main.storyboard */; };
+		3A29C4071A43479500A99F8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4061A43479500A99F8F /* Images.xcassets */; };
+		3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4081A43479500A99F8F /* LaunchScreen.xib */; };
+		3A29C4161A43479500A99F8F /* MyFutureHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */; };
+		3A29C4221A43583D00A99F8F /* gitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4211A43583D00A99F8F /* gitter.png */; };
+		3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */; };
+		3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A892A4E1A5C48E000370BC8 /* FBLogin.m */; };
+		3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AA9E1A76C51600BBB294 /* PGFirstViewController.m */; };
+		3AC3AAA61A76C51600BBB294 /* PGSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AAA01A76C51600BBB294 /* PGSecondViewController.m */; };
+		3AC3AAA71A76C51600BBB294 /* PGSideDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AAA21A76C51600BBB294 /* PGSideDrawerController.m */; };
+		3AC3AAA81A76C51600BBB294 /* PGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AAA41A76C51600BBB294 /* PGViewController.m */; };
+		7DA209B48929F08841F2F990 /* libPods-MyFutureHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864B9D51B8F6B2D7F220C11C /* libPods-MyFutureHome.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A29C4101A43479500A99F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A29C3EB1A43479500A99F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A29C3F21A43479500A99F8F;
+			remoteInfo = MyFutureHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DCD16A2FFE20450CE928B85 /* Pods-MyFutureHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFutureHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome.release.xcconfig"; sourceTree = "<group>"; };
+		3A29C3F31A43479500A99F8F /* MyFutureHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFutureHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A29C3F71A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A29C3F81A43479500A99F8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A29C3FA1A43479500A99F8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A29C3FB1A43479500A99F8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A29C3FE1A43479500A99F8F /* MyFutureHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFutureHome.xcdatamodel; sourceTree = "<group>"; };
+		3A29C4001A43479500A99F8F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A29C4011A43479500A99F8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A29C4041A43479500A99F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A29C4061A43479500A99F8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A29C4091A43479500A99F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3A29C40F1A43479500A99F8F /* MyFutureHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFutureHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A29C4141A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFutureHomeTests.m; sourceTree = "<group>"; };
+		3A29C4211A43583D00A99F8F /* gitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitter.png; sourceTree = "<group>"; };
+		3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		3A892A4D1A5C48E000370BC8 /* FBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLogin.h; path = ../FBLogin.h; sourceTree = "<group>"; };
+		3A892A4E1A5C48E000370BC8 /* FBLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLogin.m; path = ../FBLogin.m; sourceTree = "<group>"; };
+		3AC3AA9D1A76C51600BBB294 /* PGFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGFirstViewController.h; sourceTree = "<group>"; };
+		3AC3AA9E1A76C51600BBB294 /* PGFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGFirstViewController.m; sourceTree = "<group>"; };
+		3AC3AA9F1A76C51600BBB294 /* PGSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGSecondViewController.h; sourceTree = "<group>"; };
+		3AC3AAA01A76C51600BBB294 /* PGSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGSecondViewController.m; sourceTree = "<group>"; };
+		3AC3AAA11A76C51600BBB294 /* PGSideDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGSideDrawerController.h; sourceTree = "<group>"; };
+		3AC3AAA21A76C51600BBB294 /* PGSideDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGSideDrawerController.m; sourceTree = "<group>"; };
+		3AC3AAA31A76C51600BBB294 /* PGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGViewController.h; sourceTree = "<group>"; };
+		3AC3AAA41A76C51600BBB294 /* PGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGViewController.m; sourceTree = "<group>"; };
+		864B9D51B8F6B2D7F220C11C /* libPods-MyFutureHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFutureHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5851EBF0CF9D026525C34C4 /* Pods-MyFutureHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFutureHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A29C3F01A43479500A99F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */,
+				7DA209B48929F08841F2F990 /* libPods-MyFutureHome.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A29C40C1A43479500A99F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A29C3EA1A43479500A99F8F = {
+			isa = PBXGroup;
+			children = (
+				3A892A461A5C3DDE00370BC8 /* Frameworks */,
+				3A29C3F51A43479500A99F8F /* MyFutureHome */,
+				3A29C4121A43479500A99F8F /* MyFutureHomeTests */,
+				3A29C3F41A43479500A99F8F /* Products */,
+				E6BD28091A5E8DA0BF9F07C9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3A29C3F41A43479500A99F8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A29C3F31A43479500A99F8F /* MyFutureHome.app */,
+				3A29C40F1A43479500A99F8F /* MyFutureHomeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A29C3F51A43479500A99F8F /* MyFutureHome */ = {
+			isa = PBXGroup;
+			children = (
+				3AC3AA9C1A76C51600BBB294 /* Controllers */,
+				3A892A4D1A5C48E000370BC8 /* FBLogin.h */,
+				3A892A4E1A5C48E000370BC8 /* FBLogin.m */,
+				3A29C3FA1A43479500A99F8F /* AppDelegate.h */,
+				3A29C3FB1A43479500A99F8F /* AppDelegate.m */,
+				3A29C4001A43479500A99F8F /* ViewController.h */,
+				3A29C4011A43479500A99F8F /* ViewController.m */,
+				3A29C4031A43479500A99F8F /* Main.storyboard */,
+				3A29C4061A43479500A99F8F /* Images.xcassets */,
+				3A29C4081A43479500A99F8F /* LaunchScreen.xib */,
+				3A29C3FD1A43479500A99F8F /* MyFutureHome.xcdatamodeld */,
+				3A29C4211A43583D00A99F8F /* gitter.png */,
+				3A29C3F61A43479500A99F8F /* Supporting Files */,
+			);
+			path = MyFutureHome;
+			sourceTree = "<group>";
+		};
+		3A29C3F61A43479500A99F8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A29C3F71A43479500A99F8F /* Info.plist */,
+				3A29C3F81A43479500A99F8F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A29C4121A43479500A99F8F /* MyFutureHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */,
+				3A29C4131A43479500A99F8F /* Supporting Files */,
+			);
+			path = MyFutureHomeTests;
+			sourceTree = "<group>";
+		};
+		3A29C4131A43479500A99F8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A29C4141A43479500A99F8F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A892A461A5C3DDE00370BC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */,
+				864B9D51B8F6B2D7F220C11C /* libPods-MyFutureHome.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AC3AA9C1A76C51600BBB294 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AC3AA9D1A76C51600BBB294 /* PGFirstViewController.h */,
+				3AC3AA9E1A76C51600BBB294 /* PGFirstViewController.m */,
+				3AC3AA9F1A76C51600BBB294 /* PGSecondViewController.h */,
+				3AC3AAA01A76C51600BBB294 /* PGSecondViewController.m */,
+				3AC3AAA11A76C51600BBB294 /* PGSideDrawerController.h */,
+				3AC3AAA21A76C51600BBB294 /* PGSideDrawerController.m */,
+				3AC3AAA31A76C51600BBB294 /* PGViewController.h */,
+				3AC3AAA41A76C51600BBB294 /* PGViewController.m */,
+			);
+			name = Controllers;
+			path = ../Controllers;
+			sourceTree = "<group>";
+		};
+		E6BD28091A5E8DA0BF9F07C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5851EBF0CF9D026525C34C4 /* Pods-MyFutureHome.debug.xcconfig */,
+				2DCD16A2FFE20450CE928B85 /* Pods-MyFutureHome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A29C3F21A43479500A99F8F /* MyFutureHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A29C4191A43479500A99F8F /* Build configuration list for PBXNativeTarget "MyFutureHome" */;
+			buildPhases = (
+				477AE74CE00C217B0472B44F /* Check Pods Manifest.lock */,
+				3A29C3EF1A43479500A99F8F /* Sources */,
+				3A29C3F01A43479500A99F8F /* Frameworks */,
+				3A29C3F11A43479500A99F8F /* Resources */,
+				C0BE392C295A983542A89302 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFutureHome;
+			productName = MyFutureHome;
+			productReference = 3A29C3F31A43479500A99F8F /* MyFutureHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A29C40E1A43479500A99F8F /* MyFutureHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A29C41C1A43479500A99F8F /* Build configuration list for PBXNativeTarget "MyFutureHomeTests" */;
+			buildPhases = (
+				3A29C40B1A43479500A99F8F /* Sources */,
+				3A29C40C1A43479500A99F8F /* Frameworks */,
+				3A29C40D1A43479500A99F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A29C4111A43479500A99F8F /* PBXTargetDependency */,
+			);
+			name = MyFutureHomeTests;
+			productName = MyFutureHomeTests;
+			productReference = 3A29C40F1A43479500A99F8F /* MyFutureHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A29C3EB1A43479500A99F8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = SI2;
+				TargetAttributes = {
+					3A29C3F21A43479500A99F8F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3A29C40E1A43479500A99F8F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3A29C3F21A43479500A99F8F;
+					};
+				};
+			};
+			buildConfigurationList = 3A29C3EE1A43479500A99F8F /* Build configuration list for PBXProject "MyFutureHome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A29C3EA1A43479500A99F8F;
+			productRefGroup = 3A29C3F41A43479500A99F8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A29C3F21A43479500A99F8F /* MyFutureHome */,
+				3A29C40E1A43479500A99F8F /* MyFutureHomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A29C3F11A43479500A99F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A29C4051A43479500A99F8F /* Main.storyboard in Resources */,
+				3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */,
+				3A29C4071A43479500A99F8F /* Images.xcassets in Resources */,
+				3A29C4221A43583D00A99F8F /* gitter.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A29C40D1A43479500A99F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		477AE74CE00C217B0472B44F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0BE392C295A983542A89302 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A29C3EF1A43479500A99F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC3AAA71A76C51600BBB294 /* PGSideDrawerController.m in Sources */,
+				3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */,
+				3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */,
+				3A29C3F91A43479500A99F8F /* main.m in Sources */,
+				3AC3AAA81A76C51600BBB294 /* PGViewController.m in Sources */,
+				3AC3AAA61A76C51600BBB294 /* PGSecondViewController.m in Sources */,
+				3A29C4021A43479500A99F8F /* ViewController.m in Sources */,
+				3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */,
+				3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A29C40B1A43479500A99F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A29C4161A43479500A99F8F /* MyFutureHomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A29C4111A43479500A99F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A29C3F21A43479500A99F8F /* MyFutureHome */;
+			targetProxy = 3A29C4101A43479500A99F8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A29C4031A43479500A99F8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A29C4041A43479500A99F8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A29C4081A43479500A99F8F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A29C4091A43479500A99F8F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A29C4171A43479500A99F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A29C4181A43479500A99F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A29C41A1A43479500A99F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5851EBF0CF9D026525C34C4 /* Pods-MyFutureHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MyFutureHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A29C41B1A43479500A99F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DCD16A2FFE20450CE928B85 /* Pods-MyFutureHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MyFutureHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A29C41D1A43479500A99F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyFutureHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFutureHome.app/MyFutureHome";
+			};
+			name = Debug;
+		};
+		3A29C41E1A43479500A99F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyFutureHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFutureHome.app/MyFutureHome";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A29C3EE1A43479500A99F8F /* Build configuration list for PBXProject "MyFutureHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A29C4171A43479500A99F8F /* Debug */,
+				3A29C4181A43479500A99F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A29C4191A43479500A99F8F /* Build configuration list for PBXNativeTarget "MyFutureHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A29C41A1A43479500A99F8F /* Debug */,
+				3A29C41B1A43479500A99F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A29C41C1A43479500A99F8F /* Build configuration list for PBXNativeTarget "MyFutureHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A29C41D1A43479500A99F8F /* Debug */,
+				3A29C41E1A43479500A99F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A29C3FD1A43479500A99F8F /* MyFutureHome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A29C3FE1A43479500A99F8F /* MyFutureHome.xcdatamodel */,
+			);
+			currentVersion = 3A29C3FE1A43479500A99F8F /* MyFutureHome.xcdatamodel */;
+			path = MyFutureHome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A29C3EB1A43479500A99F8F /* Project object */;
+}
