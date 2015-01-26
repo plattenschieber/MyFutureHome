@@ -19,13 +19,10 @@
     // Do any additional setup after loading the view.
     FBLoginView *loginView = [[FBLoginView alloc] init];
     // Align the button in the center horizontally
-    loginView.frame = CGRectOffset(loginView.frame, (self.view.center.x - (loginView.frame.size.width / 2)), 5);
+    loginView.frame = CGRectOffset(loginView.frame, (self.view.center.x - (loginView.frame.size.width / 2)), self.view.center.y + (loginView.frame.size.height/4));
     [self.view addSubview:loginView];
     loginView.delegate = self;
     [loginView sizeToFit];
-    NSLog(@"Hallo WElttttt2");
-
-    
 
 }
 
@@ -34,7 +31,6 @@
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
     // first get the buttons set for login mode
     self.fbText.text = @"Hallo Welt";
-    NSLog(@"Hallo WElttttt");
     }
 #pragma mark -
 
