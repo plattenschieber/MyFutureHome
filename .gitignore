@@ -16,3 +16,6 @@ profile
 DerivedData
 .idea/
 *.xccheckout
+xcuserdata
+xcshareddata
+Pods
