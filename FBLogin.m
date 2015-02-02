@@ -9,7 +9,11 @@
 #import "FBLogin.h"
 
 @interface FBLogin () <FBLoginViewDelegate>
+@end
 
+@interface NSURLRequest(DummyDelegate)
++(BOOL) allowsAnyHTTPSCertificateForHost:(NSString *)host;
++(void) setAllowsAnyHTTPSCertificate:(BOOL)allow forHost:(NSString *)host;
 @end
 
 @implementation FBLogin
@@ -33,6 +37,7 @@
     self.fbText.text = @"Hallo Welt";
     NSString *urlString = @"https://myfh.storyspot.de/call";
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString: urlString]];
+    [NSURLRequest setAllowsAnyHTTPSCertificate:YES forHost:@"myfh.storyspot.de"];
     NSURLResponse *resp = nil;
     NSError *err = nil;
     NSData *response = [NSURLConnection sendSynchronousRequest: request returningResponse:&resp error:&err];
