@@ -12,5 +12,6 @@
 
 @interface FBLogin : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *fbText;
+@property (strong, nonatomic) NSString *fbToken;
 
 @end

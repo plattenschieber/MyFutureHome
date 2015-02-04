@@ -7,6 +7,12 @@
 //
 
 #import "FBLogin.h"
+#import <RestKit/RestKit.h>
+#import "MFHJSONResponseCall.h"
+#import "MFHJSONResponseInit.h"
+#import "MFHJSONResponseProfile.h"
+#import "MFHJSONResponseSettings.h"
+#import "MFHJSONResponseUser.h"
 
 @interface FBLogin () <FBLoginViewDelegate>
 @end
@@ -43,8 +49,50 @@
     NSData *response = [NSURLConnection sendSynchronousRequest: request returningResponse:&resp error:&err];
     NSString *responseString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
     NSLog(@"%@", responseString);
+    // do some REST ;)
+    [self configureRestKit];
+    [self loadREST];
 
     }
+
+- (void)configureRestKit
+{
+    // initialize AFNetworking HTTPClient
+    NSURL *baseURL = [NSURL URLWithString:@"https://mfh.storyspot.de"];
+    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
+    
+    // initialize RestKit
+    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
+    
+    // setup object mappings
+    RKObjectMapping *initMapping = [RKObjectMapping mappingForClass:[MFHJSONResponseInit class]];
+    [initMapping addAttributeMappingsFromArray:@[@"state"]];
+    
+    // register mappings with the provider using a response descriptor
+    RKResponseDescriptor *responseDescriptor =
+    [RKResponseDescriptor responseDescriptorWithMapping:initMapping
+                                                 method:RKRequestMethodPOST
+                                            pathPattern:@"/init"
+                                                keyPath:@""
+                                            statusCodes:[NSIndexSet indexSetWithIndex:200]];
+    
+    [objectManager addResponseDescriptor:responseDescriptor];
+}
+
+- (void)loadREST
+{    
+    NSDictionary *queryParams = @{@"phoneId" : self.fbToken};
+    
+    [[RKObjectManager sharedManager] getObjectsAtPath:@"/init"
+                                           parameters:queryParams
+                                              success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                                                  NSLog(@"%@",mappingResult.array[0]);
+                                              }
+                                              failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                                                  NSLog(@"What do you mean by 'there is no coffee?': %@", error);
+                                              }];
+}
+
 #pragma mark -
 
 - (void)didReceiveMemoryWarning {
