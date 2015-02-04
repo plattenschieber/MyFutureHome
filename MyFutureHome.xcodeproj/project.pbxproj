@@ -16,6 +16,12 @@
 		3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4081A43479500A99F8F /* LaunchScreen.xib */; };
 		3A29C4161A43479500A99F8F /* MyFutureHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */; };
 		3A29C4221A43583D00A99F8F /* gitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4211A43583D00A99F8F /* gitter.png */; };
+		3A87EB211A82315600E00F90 /* MFHJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB201A82315600E00F90 /* MFHJSONResponse.m */; };
+		3A87EB271A8231A500E00F90 /* MFHJSONResponseCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB221A8231A500E00F90 /* MFHJSONResponseCall.m */; };
+		3A87EB281A8231A500E00F90 /* MFHJSONResponseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB231A8231A500E00F90 /* MFHJSONResponseUser.m */; };
+		3A87EB291A8231A500E00F90 /* MFHJSONResponseSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB241A8231A500E00F90 /* MFHJSONResponseSettings.m */; };
+		3A87EB2A1A8231A500E00F90 /* MFHJSONResponseProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB251A8231A500E00F90 /* MFHJSONResponseProfile.m */; };
+		3A87EB2B1A8231A500E00F90 /* MFHJSONResponseInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB261A8231A500E00F90 /* MFHJSONResponseInit.m */; };
 		3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */; };
 		3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A892A4E1A5C48E000370BC8 /* FBLogin.m */; };
 		3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AA9E1A76C51600BBB294 /* PGFirstViewController.m */; };
@@ -52,12 +58,19 @@
 		3A29C4141A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFutureHomeTests.m; sourceTree = "<group>"; };
 		3A29C4211A43583D00A99F8F /* gitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitter.png; sourceTree = "<group>"; };
-		3A87EAFB1A8221BD00E00F90 /* MFHJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponse.h; sourceTree = "<group>"; };
 		3A87EAFE1A8221DB00E00F90 /* MFHJSONResponseInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseInit.h; sourceTree = "<group>"; };
 		3A87EB011A8221F400E00F90 /* MFHJSONResponseProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseProfile.h; sourceTree = "<group>"; };
 		3A87EB041A82220900E00F90 /* MFHJSONResponseSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseSettings.h; sourceTree = "<group>"; };
 		3A87EB071A82224B00E00F90 /* MFHJSONResponseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseUser.h; sourceTree = "<group>"; };
 		3A87EB0A1A82226800E00F90 /* MFHJSONResponseCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseCall.h; sourceTree = "<group>"; };
+		3A87EB0D1A822F7600E00F90 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponse.h; sourceTree = "<group>"; };
+		3A87EB201A82315600E00F90 /* MFHJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponse.m; sourceTree = "<group>"; };
+		3A87EB221A8231A500E00F90 /* MFHJSONResponseCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseCall.m; sourceTree = "<group>"; };
+		3A87EB231A8231A500E00F90 /* MFHJSONResponseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseUser.m; sourceTree = "<group>"; };
+		3A87EB241A8231A500E00F90 /* MFHJSONResponseSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseSettings.m; sourceTree = "<group>"; };
+		3A87EB251A8231A500E00F90 /* MFHJSONResponseProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseProfile.m; sourceTree = "<group>"; };
+		3A87EB261A8231A500E00F90 /* MFHJSONResponseInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseInit.m; sourceTree = "<group>"; };
 		3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		3A892A4D1A5C48E000370BC8 /* FBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLogin.h; path = ../FBLogin.h; sourceTree = "<group>"; };
 		3A892A4E1A5C48E000370BC8 /* FBLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLogin.m; path = ../FBLogin.m; sourceTree = "<group>"; };
@@ -96,6 +109,7 @@
 		3A29C3EA1A43479500A99F8F = {
 			isa = PBXGroup;
 			children = (
+				3A87EB0D1A822F7600E00F90 /* Test.h */,
 				3A892A461A5C3DDE00370BC8 /* Frameworks */,
 				3A29C3F51A43479500A99F8F /* MyFutureHome */,
 				3A29C4121A43479500A99F8F /* MyFutureHomeTests */,
@@ -119,12 +133,7 @@
 				3AC3AA9C1A76C51600BBB294 /* Controllers */,
 				3A892A4D1A5C48E000370BC8 /* FBLogin.h */,
 				3A892A4E1A5C48E000370BC8 /* FBLogin.m */,
-				3A87EAFB1A8221BD00E00F90 /* MFHJSONResponse.h */,
-				3A87EB0A1A82226800E00F90 /* MFHJSONResponseCall.h */,
-				3A87EAFE1A8221DB00E00F90 /* MFHJSONResponseInit.h */,
-				3A87EB011A8221F400E00F90 /* MFHJSONResponseProfile.h */,
-				3A87EB041A82220900E00F90 /* MFHJSONResponseSettings.h */,
-				3A87EB071A82224B00E00F90 /* MFHJSONResponseUser.h */,
+				3A87EB2C1A8231B900E00F90 /* MFHJSON */,
 				3A29C3FA1A43479500A99F8F /* AppDelegate.h */,
 				3A29C3FB1A43479500A99F8F /* AppDelegate.m */,
 				3A29C4001A43479500A99F8F /* ViewController.h */,
@@ -163,6 +172,25 @@
 				3A29C4141A43479500A99F8F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A87EB2C1A8231B900E00F90 /* MFHJSON */ = {
+			isa = PBXGroup;
+			children = (
+				3A87EB221A8231A500E00F90 /* MFHJSONResponseCall.m */,
+				3A87EB231A8231A500E00F90 /* MFHJSONResponseUser.m */,
+				3A87EB241A8231A500E00F90 /* MFHJSONResponseSettings.m */,
+				3A87EB251A8231A500E00F90 /* MFHJSONResponseProfile.m */,
+				3A87EB261A8231A500E00F90 /* MFHJSONResponseInit.m */,
+				3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */,
+				3A87EB201A82315600E00F90 /* MFHJSONResponse.m */,
+				3A87EB0A1A82226800E00F90 /* MFHJSONResponseCall.h */,
+				3A87EAFE1A8221DB00E00F90 /* MFHJSONResponseInit.h */,
+				3A87EB011A8221F400E00F90 /* MFHJSONResponseProfile.h */,
+				3A87EB041A82220900E00F90 /* MFHJSONResponseSettings.h */,
+				3A87EB071A82224B00E00F90 /* MFHJSONResponseUser.h */,
+			);
+			name = MFHJSON;
 			sourceTree = "<group>";
 		};
 		3A892A461A5C3DDE00370BC8 /* Frameworks */ = {
@@ -336,10 +364,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC3AAA71A76C51600BBB294 /* PGSideDrawerController.m in Sources */,
+				3A87EB2B1A8231A500E00F90 /* MFHJSONResponseInit.m in Sources */,
 				3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */,
+				3A87EB2A1A8231A500E00F90 /* MFHJSONResponseProfile.m in Sources */,
 				3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */,
+				3A87EB211A82315600E00F90 /* MFHJSONResponse.m in Sources */,
+				3A87EB271A8231A500E00F90 /* MFHJSONResponseCall.m in Sources */,
+				3A87EB291A8231A500E00F90 /* MFHJSONResponseSettings.m in Sources */,
 				3A29C3F91A43479500A99F8F /* main.m in Sources */,
 				3AC3AAA81A76C51600BBB294 /* PGViewController.m in Sources */,
+				3A87EB281A8231A500E00F90 /* MFHJSONResponseUser.m in Sources */,
 				3AC3AAA61A76C51600BBB294 /* PGSecondViewController.m in Sources */,
 				3A29C4021A43479500A99F8F /* ViewController.m in Sources */,
 				3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */,
