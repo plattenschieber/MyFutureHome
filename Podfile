@@ -3,6 +3,7 @@
 
 target 'MyFutureHome' do
 pod 'MMDrawerController', '~> 0.5.7'
+pod 'RestKit', '~> 0.20.0'
 
 end
 
