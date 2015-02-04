@@ -41,14 +41,17 @@
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
     // first get the buttons set for login mode
     self.fbText.text = @"Hallo Welt";
-    NSString *urlString = @"https://myfh.storyspot.de/call";
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString: urlString]];
-    [NSURLRequest setAllowsAnyHTTPSCertificate:YES forHost:@"myfh.storyspot.de"];
-    NSURLResponse *resp = nil;
-    NSError *err = nil;
-    NSData *response = [NSURLConnection sendSynchronousRequest: request returningResponse:&resp error:&err];
-    NSString *responseString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
-    NSLog(@"%@", responseString);
+    
+    self.fbToken = @"123451234512345";
+    //NSString *urlString = @"https://myfh.storyspot.de/call";
+    //NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString: urlString]];
+    //[NSURLRequest setAllowsAnyHTTPSCertificate:YES forHost:@"myfh.storyspot.de"];
+    //NSURLResponse *resp = nil;
+    //NSError *err = nil;
+    //NSData *response = [NSURLConnection sendSynchronousRequest: request returningResponse:&resp error:&err];
+    //NSString *responseString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    //NSLog(@"%@", responseString);
+
     // do some REST ;)
     [self configureRestKit];
     [self loadREST];
