@@ -61,7 +61,7 @@
 - (void)configureRestKit
 {
     // initialize AFNetworking HTTPClient
-    NSURL *baseURL = [NSURL URLWithString:@"https://mfh.storyspot.de"];
+    NSURL *baseURL = [NSURL URLWithString:@"http://myfh.storyspot.de"];
     AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
     
     // initialize RestKit
