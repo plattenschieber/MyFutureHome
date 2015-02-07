@@ -86,14 +86,6 @@
 {    
     NSDictionary *queryParams = @{@"phoneId" : self.fbToken};
     
-//    [[RKObjectManager sharedManager] getObjectsAtPath:@"/init"
-//                                           parameters:queryParams
-//                                              success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-//                                                  NSLog(@"%@",mappingResult.array[0]);
-//                                              }
-//                                              failure:^(RKObjectRequestOperation *operation, NSError *error) {
-//                                                  NSLog(@"What do you mean by 'there is no coffee?': %@", error);
-//                                              }];
 }
 
 #pragma mark -
