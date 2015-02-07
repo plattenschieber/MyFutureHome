@@ -83,8 +83,7 @@
 }
 
 - (void)loadREST
-{    
-    NSDictionary *queryParams = @{@"phoneId" : self.fbToken};
+{
     
 }
 
