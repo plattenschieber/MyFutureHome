@@ -80,11 +80,32 @@
                                             statusCodes:[NSIndexSet indexSetWithIndex:200]];
     
     [objectManager addResponseDescriptor:responseDescriptor];
+    
+    // setup object mappings
+    RKObjectMapping *requestMapping = [RKObjectMapping requestMapping];// Shortcut for [RKObjectMapping mappingForClass:[NSMutableDictionary class] ]
+    [requestMapping addAttributeMappingsFromArray:@[@"phoneId"]];
+    
+    // register mappings with the provider using a response descriptor
+    RKRequestDescriptor *requestDescriptor =
+    [RKRequestDescriptor
+     requestDescriptorWithMapping:requestMapping
+     objectClass:[MFHJSONResponseInit class]
+     rootKeyPath:nil
+     method:RKRequestMethodAny];
+    [objectManager addRequestDescriptor:requestDescriptor];
 }
 
 - (void)loadREST
 {
+    MFHJSONResponseInit *test = [MFHJSONResponseInit new];
+    test.phoneId = [NSString stringWithFormat:@"%@%i",self.fbToken,arc4random_uniform(74)];
     
+    [[RKObjectManager sharedManager] postObject:test path:@"init" parameters:nil//queryParams
+                                        success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                                            NSLog(@"Ballla - Data: %@\tMessage: %@", [test accessToken], [test state]);
+                                        }
+
+                                        failure:nil];
 }
 
 #pragma mark -
