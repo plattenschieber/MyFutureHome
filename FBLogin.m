@@ -95,6 +95,7 @@
     [objectManager addRequestDescriptor:requestDescriptor];
     
     [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/plain"];
+    [objectManager setRequestSerializationMIMEType:RKMIMETypeFormURLEncoded];
 }
 
 - (void)loadREST
