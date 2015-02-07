@@ -93,6 +93,8 @@
      rootKeyPath:nil
      method:RKRequestMethodAny];
     [objectManager addRequestDescriptor:requestDescriptor];
+    
+    [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/plain"];
 }
 
 - (void)loadREST
