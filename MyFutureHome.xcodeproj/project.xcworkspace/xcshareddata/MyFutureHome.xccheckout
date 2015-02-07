@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C1346261-A18C-4046-928F-BB1C7F7903FC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyFutureHome</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BA3B2A3A2C0EF11DAEFE2F5278C11DDB5F6DE4B0</key>
+		<string>https://github.com/plattenschieber/MyFutureHome.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyFutureHome.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BA3B2A3A2C0EF11DAEFE2F5278C11DDB5F6DE4B0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/plattenschieber/MyFutureHome.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BA3B2A3A2C0EF11DAEFE2F5278C11DDB5F6DE4B0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BA3B2A3A2C0EF11DAEFE2F5278C11DDB5F6DE4B0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyFutureHome</string>
+		</dict>
+	</array>
+</dict>
+</plist>
