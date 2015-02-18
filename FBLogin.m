@@ -35,8 +35,8 @@
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
     // HERE WE CAN DO SOME STUFF WITH A LOGGED IN FB USER
-    MFHDataHandler *dataHandler = [MFHDataHandler init];
     [dataHandler registerUser:@"SUPERGEILESTOKEN"];
+    MFHDataHandler *dataHandler = [[MFHDataHandler alloc] init];
 }
 
 #pragma mark -
