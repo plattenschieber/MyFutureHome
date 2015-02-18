@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
-#import <RestKit/RestKit.h>
 
 @interface AppDelegate ()
 
