@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RestKit/RestKit.h>
 #import "MFHJSONResponse.h"
 #import "MFHUser.h"
 #import "MFHUserSearchProfile.h"
@@ -14,6 +15,8 @@
 #import "MFHAdvert.h"
 
 @interface MFHDataHandler : MFHJSONResponse
+
+@property RKObjectManager *objectManager;
 
 //! given a unique phoneId, register this phoneId in the database and return a simple
 //! user object with an accessToken
