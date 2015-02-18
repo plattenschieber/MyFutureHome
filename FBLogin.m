@@ -76,7 +76,7 @@
     [RKResponseDescriptor responseDescriptorWithMapping:responseMapping
                                                  method:RKRequestMethodPOST
                                             pathPattern:@"/init"
-                                                keyPath:@""
+                                                keyPath:nil
                                             statusCodes:[NSIndexSet indexSetWithIndex:200]];
     
     [objectManager addResponseDescriptor:responseDescriptor];
