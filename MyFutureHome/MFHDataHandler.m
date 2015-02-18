@@ -28,10 +28,14 @@
 //! user object with an accessToken
 - (MFHUser *) registerUser: (NSString*) phoneId
 {
-    // setup object mappings
+    // setup response mapping
     RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[MFHUser class]];
     [responseMapping addAttributeMappingsFromArray:@[@"state", @"phoneId", @"accessToken"]];
     
+    // setup request mapping
+    RKObjectMapping *requestMapping = [RKObjectMapping requestMapping];
+    [requestMapping addAttributeMappingsFromArray:@[@"phoneId"]];
+
     // register mappings with the provider using a response descriptor
     RKResponseDescriptor *responseDescriptor =
     [RKResponseDescriptor responseDescriptorWithMapping:responseMapping
@@ -40,40 +44,40 @@
                                                 keyPath:nil
                                             statusCodes:[NSIndexSet indexSetWithIndex:200]];
     
-    [self.objectManager addResponseDescriptor:responseDescriptor];
-    
-    // setup object mappings
-    RKObjectMapping *requestMapping = [RKObjectMapping requestMapping];// Shortcut for [RKObjectMapping mappingForClass:[NSMutableDictionary class] ]
-    [requestMapping addAttributeMappingsFromArray:@[@"phoneId"]];
-    
-    // register mappings with the provider using a response descriptor
+    // register mappings with the provider using a request descriptor
     RKRequestDescriptor *requestDescriptor =
-    [RKRequestDescriptor
-     requestDescriptorWithMapping:requestMapping
-     objectClass:[MFHUser class]
-     rootKeyPath:nil
-     method:RKRequestMethodAny];
+    [RKRequestDescriptor requestDescriptorWithMapping:requestMapping
+                                          objectClass:[MFHUser class]
+                                          rootKeyPath:nil
+                                               method:RKRequestMethodAny];
+    
+    // now add all descriptors
+    [self.objectManager addResponseDescriptor:responseDescriptor];
     [self.objectManager addRequestDescriptor:requestDescriptor];
     
+    // setup the serialization type
     [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/plain"];
     [self.objectManager setRequestSerializationMIMEType:RKMIMETypeFormURLEncoded];
    
-    MFHUser *testUser = [MFHUser new];
-    testUser.phoneId = [NSString stringWithFormat:@"%@%i", phoneId, arc4random_uniform(74)];
-    NSLog(@"THIS IS THE CURRENT PHONEID: %@",testUser.phoneId);
+    // create a new MFHUser object and initialize it
+    MFHUser *user = [MFHUser new];
+    user.phoneId = [NSString stringWithFormat:@"%@%i", phoneId, arc4random_uniform(74)];
     
-    [[RKObjectManager sharedManager] postObject:testUser path:@"init" parameters:nil//queryParams
+    // actually perform the request and handle the response
+    [[RKObjectManager sharedManager] postObject:user path:@"init" parameters:nil//queryParams
                                         success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-                                            NSLog(@"Ballla - Data: %@\tMessage: %@", [testUser accessToken], [testUser state]);
+                                            NSLog(@"Ballla - Data: %@\tMessage: %@", [user accessToken], [user state]);
                                         }
      
                                         failure:^(RKObjectRequestOperation *operation, NSError *error) {
                                             NSLog(@"Ein Satz mit X, das ist der Error: %@", error.description);
                                         }];
+    
+    // clear object manager by removing descriptors
     [self.objectManager removeRequestDescriptor:requestDescriptor];
     [self.objectManager removeResponseDescriptor:responseDescriptor];
     
-    return testUser;
+    return user;
 }
 //! here we update the user object in our database
 - (bool) updateUser: (MFHUser *) user
