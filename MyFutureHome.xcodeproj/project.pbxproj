@@ -16,6 +16,8 @@
 		3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4081A43479500A99F8F /* LaunchScreen.xib */; };
 		3A29C4161A43479500A99F8F /* MyFutureHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */; };
 		3A29C4221A43583D00A99F8F /* gitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4211A43583D00A99F8F /* gitter.png */; };
+		3A7369FE1A950F0900392EA0 /* MFHJSONResponse.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */; };
+		3A736A021A950FA400392EA0 /* MFHJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A736A011A950FA400392EA0 /* MFHJSONResponse.m */; };
 		3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */; };
 		3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A892A4E1A5C48E000370BC8 /* FBLogin.m */; };
 		3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AA9E1A76C51600BBB294 /* PGFirstViewController.m */; };
@@ -57,6 +59,7 @@
 		3A29C4141A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFutureHomeTests.m; sourceTree = "<group>"; };
 		3A29C4211A43583D00A99F8F /* gitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitter.png; sourceTree = "<group>"; };
+		3A736A011A950FA400392EA0 /* MFHJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponse.m; sourceTree = "<group>"; };
 		3A87EB0D1A822F7600E00F90 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponse.h; sourceTree = "<group>"; };
 		3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -200,6 +203,7 @@
 		3AE5B9FC1A949799003863DC /* MFH */ = {
 			isa = PBXGroup;
 			children = (
+				3A736A011A950FA400392EA0 /* MFHJSONResponse.m */,
 				3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */,
 				3AE5B9FD1A949E3B003863DC /* MFHUserSearchProfile.h */,
 				3AE5B9FE1A949E3B003863DC /* MFHUserSearchProfile.m */,
@@ -360,6 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A736A021A950FA400392EA0 /* MFHJSONResponse.m in Sources */,
+				3A7369FE1A950F0900392EA0 /* MFHJSONResponse.h in Sources */,
 				3AC3AAA71A76C51600BBB294 /* PGSideDrawerController.m in Sources */,
 				3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */,
 				3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */,
