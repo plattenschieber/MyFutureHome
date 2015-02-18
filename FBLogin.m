@@ -68,12 +68,12 @@
     RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
     
     // setup object mappings
-    RKObjectMapping *initMapping = [RKObjectMapping mappingForClass:[MFHJSONResponseInit class]];
-    [initMapping addAttributeMappingsFromArray:@[@"state", @"phoneId", @"accessToken"]];
+    RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[MFHJSONResponseInit class]];
+    [responseMapping addAttributeMappingsFromArray:@[@"state", @"phoneId", @"accessToken"]];
     
     // register mappings with the provider using a response descriptor
     RKResponseDescriptor *responseDescriptor =
-    [RKResponseDescriptor responseDescriptorWithMapping:initMapping
+    [RKResponseDescriptor responseDescriptorWithMapping:responseMapping
                                                  method:RKRequestMethodPOST
                                             pathPattern:@"/init"
                                                 keyPath:@""
