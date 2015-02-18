@@ -8,11 +8,7 @@
 
 #import "MFHDataHandler.h"
 #import <RestKit/RestKit.h>
-#import "MFHJSONResponseCall.h"
-#import "MFHJSONResponseInit.h"
-#import "MFHJSONResponseProfile.h"
-#import "MFHJSONResponseSettings.h"
-#import "MFHJSONResponseUser.h"
+#import "MFHJSONResponse.h"
 
 @implementation MFHDataHandler
 
@@ -49,7 +45,7 @@
     RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
     
     // setup object mappings
-    RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[MFHJSONResponseInit class]];
+    RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[MFHJSONResponse class]];
     [responseMapping addAttributeMappingsFromArray:@[@"state", @"phoneId", @"accessToken"]];
     
     // register mappings with the provider using a response descriptor
@@ -70,7 +66,7 @@
     RKRequestDescriptor *requestDescriptor =
     [RKRequestDescriptor
      requestDescriptorWithMapping:requestMapping
-     objectClass:[MFHJSONResponseInit class]
+     objectClass:[MFHJSONResponse class]
      rootKeyPath:nil
      method:RKRequestMethodAny];
     [objectManager addRequestDescriptor:requestDescriptor];
@@ -81,12 +77,12 @@
 
 - (void)loadREST
 {
-    MFHJSONResponseInit *test = [MFHJSONResponseInit new];
-    test.phoneId = [NSString stringWithFormat:@"fbTOKENHERE %i",arc4random_uniform(74)];
+    MFHJSONResponse *test = [MFHJSONResponse new];
+//    test.phoneId = [NSString stringWithFormat:@"fbTOKENHERE %i",arc4random_uniform(74)];
     
     [[RKObjectManager sharedManager] postObject:test path:@"init" parameters:nil//queryParams
                                         success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-                                            NSLog(@"Ballla - Data: %@\tMessage: %@", [test accessToken], [test state]);
+                                            NSLog(@"Ballla - Data: %@\tMessage: %@", [test errors], [test state]);
                                         }
      
                                         failure:nil];

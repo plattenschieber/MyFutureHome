@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MFHJSONResponse.h"
 #import "MFHAdvert.h"
 
-@interface MFHUserSearchProfile : NSObject
+@interface MFHUserSearchProfile : MFHJSONResponse
 
 @property NSMutableArray *adverts;
 

@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MFHJSONResponse.h"
 
-@interface MFHAdvert : NSObject
+@interface MFHAdvert : MFHJSONResponse
 
 @property NSString *advertId;
 @property NSString *externId;

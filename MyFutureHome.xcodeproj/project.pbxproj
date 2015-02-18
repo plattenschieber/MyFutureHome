@@ -16,12 +16,6 @@
 		3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4081A43479500A99F8F /* LaunchScreen.xib */; };
 		3A29C4161A43479500A99F8F /* MyFutureHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */; };
 		3A29C4221A43583D00A99F8F /* gitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4211A43583D00A99F8F /* gitter.png */; };
-		3A87EB211A82315600E00F90 /* MFHJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB201A82315600E00F90 /* MFHJSONResponse.m */; };
-		3A87EB271A8231A500E00F90 /* MFHJSONResponseCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB221A8231A500E00F90 /* MFHJSONResponseCall.m */; };
-		3A87EB281A8231A500E00F90 /* MFHJSONResponseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB231A8231A500E00F90 /* MFHJSONResponseUser.m */; };
-		3A87EB291A8231A500E00F90 /* MFHJSONResponseSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB241A8231A500E00F90 /* MFHJSONResponseSettings.m */; };
-		3A87EB2A1A8231A500E00F90 /* MFHJSONResponseProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB251A8231A500E00F90 /* MFHJSONResponseProfile.m */; };
-		3A87EB2B1A8231A500E00F90 /* MFHJSONResponseInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB261A8231A500E00F90 /* MFHJSONResponseInit.m */; };
 		3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */; };
 		3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A892A4E1A5C48E000370BC8 /* FBLogin.m */; };
 		3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AA9E1A76C51600BBB294 /* PGFirstViewController.m */; };
@@ -30,6 +24,9 @@
 		3AC3AAA81A76C51600BBB294 /* PGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AAA41A76C51600BBB294 /* PGViewController.m */; };
 		3AE5B9F81A9496BB003863DC /* MFHDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5B9F71A9496BB003863DC /* MFHDataHandler.m */; };
 		3AE5B9FB1A94978E003863DC /* MFHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5B9FA1A94978E003863DC /* MFHUser.m */; };
+		3AE5B9FF1A949E3B003863DC /* MFHUserSearchProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5B9FE1A949E3B003863DC /* MFHUserSearchProfile.m */; };
+		3AE5BA021A94A0B5003863DC /* MFHUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5BA011A94A0B5003863DC /* MFHUserSettings.m */; };
+		3AE5BA051A94A1B7003863DC /* MFHAdvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5BA041A94A1B7003863DC /* MFHAdvert.m */; };
 		7DA209B48929F08841F2F990 /* libPods-MyFutureHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864B9D51B8F6B2D7F220C11C /* libPods-MyFutureHome.a */; };
 /* End PBXBuildFile section */
 
@@ -60,19 +57,8 @@
 		3A29C4141A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFutureHomeTests.m; sourceTree = "<group>"; };
 		3A29C4211A43583D00A99F8F /* gitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitter.png; sourceTree = "<group>"; };
-		3A87EAFE1A8221DB00E00F90 /* MFHJSONResponseInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseInit.h; sourceTree = "<group>"; };
-		3A87EB011A8221F400E00F90 /* MFHJSONResponseProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseProfile.h; sourceTree = "<group>"; };
-		3A87EB041A82220900E00F90 /* MFHJSONResponseSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseSettings.h; sourceTree = "<group>"; };
-		3A87EB071A82224B00E00F90 /* MFHJSONResponseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseUser.h; sourceTree = "<group>"; };
-		3A87EB0A1A82226800E00F90 /* MFHJSONResponseCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponseCall.h; sourceTree = "<group>"; };
 		3A87EB0D1A822F7600E00F90 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponse.h; sourceTree = "<group>"; };
-		3A87EB201A82315600E00F90 /* MFHJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponse.m; sourceTree = "<group>"; };
-		3A87EB221A8231A500E00F90 /* MFHJSONResponseCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseCall.m; sourceTree = "<group>"; };
-		3A87EB231A8231A500E00F90 /* MFHJSONResponseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseUser.m; sourceTree = "<group>"; };
-		3A87EB241A8231A500E00F90 /* MFHJSONResponseSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseSettings.m; sourceTree = "<group>"; };
-		3A87EB251A8231A500E00F90 /* MFHJSONResponseProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseProfile.m; sourceTree = "<group>"; };
-		3A87EB261A8231A500E00F90 /* MFHJSONResponseInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponseInit.m; sourceTree = "<group>"; };
 		3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		3A892A4D1A5C48E000370BC8 /* FBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLogin.h; path = ../FBLogin.h; sourceTree = "<group>"; };
 		3A892A4E1A5C48E000370BC8 /* FBLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLogin.m; path = ../FBLogin.m; sourceTree = "<group>"; };
@@ -88,6 +74,12 @@
 		3AE5B9F71A9496BB003863DC /* MFHDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHDataHandler.m; sourceTree = "<group>"; };
 		3AE5B9F91A94978E003863DC /* MFHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHUser.h; sourceTree = "<group>"; };
 		3AE5B9FA1A94978E003863DC /* MFHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHUser.m; sourceTree = "<group>"; };
+		3AE5B9FD1A949E3B003863DC /* MFHUserSearchProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHUserSearchProfile.h; sourceTree = "<group>"; };
+		3AE5B9FE1A949E3B003863DC /* MFHUserSearchProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHUserSearchProfile.m; sourceTree = "<group>"; };
+		3AE5BA001A94A0B5003863DC /* MFHUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHUserSettings.h; sourceTree = "<group>"; };
+		3AE5BA011A94A0B5003863DC /* MFHUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHUserSettings.m; sourceTree = "<group>"; };
+		3AE5BA031A94A1B7003863DC /* MFHAdvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHAdvert.h; sourceTree = "<group>"; };
+		3AE5BA041A94A1B7003863DC /* MFHAdvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHAdvert.m; sourceTree = "<group>"; };
 		864B9D51B8F6B2D7F220C11C /* libPods-MyFutureHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFutureHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5851EBF0CF9D026525C34C4 /* Pods-MyFutureHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFutureHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,25 +172,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3A87EB2C1A8231B900E00F90 /* MFHJSON */ = {
-			isa = PBXGroup;
-			children = (
-				3A87EB221A8231A500E00F90 /* MFHJSONResponseCall.m */,
-				3A87EB231A8231A500E00F90 /* MFHJSONResponseUser.m */,
-				3A87EB241A8231A500E00F90 /* MFHJSONResponseSettings.m */,
-				3A87EB251A8231A500E00F90 /* MFHJSONResponseProfile.m */,
-				3A87EB261A8231A500E00F90 /* MFHJSONResponseInit.m */,
-				3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */,
-				3A87EB201A82315600E00F90 /* MFHJSONResponse.m */,
-				3A87EB0A1A82226800E00F90 /* MFHJSONResponseCall.h */,
-				3A87EAFE1A8221DB00E00F90 /* MFHJSONResponseInit.h */,
-				3A87EB011A8221F400E00F90 /* MFHJSONResponseProfile.h */,
-				3A87EB041A82220900E00F90 /* MFHJSONResponseSettings.h */,
-				3A87EB071A82224B00E00F90 /* MFHJSONResponseUser.h */,
-			);
-			name = MFHJSON;
-			sourceTree = "<group>";
-		};
 		3A892A461A5C3DDE00370BC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,11 +200,17 @@
 		3AE5B9FC1A949799003863DC /* MFH */ = {
 			isa = PBXGroup;
 			children = (
-				3A87EB2C1A8231B900E00F90 /* MFHJSON */,
+				3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */,
+				3AE5B9FD1A949E3B003863DC /* MFHUserSearchProfile.h */,
+				3AE5B9FE1A949E3B003863DC /* MFHUserSearchProfile.m */,
 				3AE5B9F91A94978E003863DC /* MFHUser.h */,
 				3AE5B9FA1A94978E003863DC /* MFHUser.m */,
+				3AE5BA001A94A0B5003863DC /* MFHUserSettings.h */,
+				3AE5BA011A94A0B5003863DC /* MFHUserSettings.m */,
 				3AE5B9F61A9496BB003863DC /* MFHDataHandler.h */,
 				3AE5B9F71A9496BB003863DC /* MFHDataHandler.m */,
+				3AE5BA031A94A1B7003863DC /* MFHAdvert.h */,
+				3AE5BA041A94A1B7003863DC /* MFHAdvert.m */,
 			);
 			name = MFH;
 			sourceTree = "<group>";
@@ -382,17 +361,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC3AAA71A76C51600BBB294 /* PGSideDrawerController.m in Sources */,
-				3A87EB2B1A8231A500E00F90 /* MFHJSONResponseInit.m in Sources */,
 				3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */,
-				3A87EB2A1A8231A500E00F90 /* MFHJSONResponseProfile.m in Sources */,
 				3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */,
-				3A87EB211A82315600E00F90 /* MFHJSONResponse.m in Sources */,
-				3A87EB271A8231A500E00F90 /* MFHJSONResponseCall.m in Sources */,
+				3AE5B9FF1A949E3B003863DC /* MFHUserSearchProfile.m in Sources */,
+				3AE5BA051A94A1B7003863DC /* MFHAdvert.m in Sources */,
 				3AE5B9FB1A94978E003863DC /* MFHUser.m in Sources */,
-				3A87EB291A8231A500E00F90 /* MFHJSONResponseSettings.m in Sources */,
+				3AE5BA021A94A0B5003863DC /* MFHUserSettings.m in Sources */,
 				3A29C3F91A43479500A99F8F /* main.m in Sources */,
 				3AC3AAA81A76C51600BBB294 /* PGViewController.m in Sources */,
-				3A87EB281A8231A500E00F90 /* MFHJSONResponseUser.m in Sources */,
 				3AC3AAA61A76C51600BBB294 /* PGSecondViewController.m in Sources */,
 				3A29C4021A43479500A99F8F /* ViewController.m in Sources */,
 				3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */,

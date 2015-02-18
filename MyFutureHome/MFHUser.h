@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MFHJSONResponse.h"
 #import "MFHUserSearchProfile.h"
 #import "MFHUserSettings.h"
 
-@interface MFHUser : NSObject
+@interface MFHUser : MFHJSONResponse
 
 @property NSMutableArray* searchProfiles;
 @property MFHUserSettings * settings;

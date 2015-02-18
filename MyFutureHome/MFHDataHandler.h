@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MFHJSONResponse.h"
 #import "MFHUser.h"
 #import "MFHUserSearchProfile.h"
 #import "MFHUserSettings.h"
 #import "MFHAdvert.h"
 
-@interface MFHDataHandler : NSObject
+@interface MFHDataHandler : MFHJSONResponse
 
 //! given a unique phoneId, register this phoneId in the database and return a simple
 //! user object with an accessToken
