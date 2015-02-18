@@ -45,7 +45,7 @@
     RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
     
     // setup object mappings
-    RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[MFHJSONResponse class]];
+    RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[MFHUser class]];
     [responseMapping addAttributeMappingsFromArray:@[@"state", @"phoneId", @"accessToken"]];
     
     // register mappings with the provider using a response descriptor
@@ -66,7 +66,7 @@
     RKRequestDescriptor *requestDescriptor =
     [RKRequestDescriptor
      requestDescriptorWithMapping:requestMapping
-     objectClass:[MFHJSONResponse class]
+     objectClass:[MFHUser class]
      rootKeyPath:nil
      method:RKRequestMethodAny];
     [objectManager addRequestDescriptor:requestDescriptor];
@@ -80,9 +80,9 @@
     MFHJSONResponse *test = [MFHJSONResponse new];
 //    test.phoneId = [NSString stringWithFormat:@"fbTOKENHERE %i",arc4random_uniform(74)];
     
-    [[RKObjectManager sharedManager] postObject:test path:@"init" parameters:nil//queryParams
+    [[RKObjectManager sharedManager] postObject:testUser path:@"init" parameters:nil//queryParams
                                         success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-                                            NSLog(@"Ballla - Data: %@\tMessage: %@", [test errors], [test state]);
+                                            NSLog(@"Ballla - Data: %@\tMessage: %@", [testUser accessToken], [testUser state]);
                                         }
      
                                         failure:nil];
