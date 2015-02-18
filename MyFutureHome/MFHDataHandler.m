@@ -16,8 +16,12 @@
 - (id) init
 {
     self = [super init];
-    [self configureRestKit];
+    // initialize AFNetworking HTTPClient
+    NSURL *baseURL = [NSURL URLWithString:@"http://myfh.storyspot.de"];
+    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
     
+    // initialize RestKit
+    self.objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
     return self;
 }
 
@@ -37,13 +41,6 @@
 
 - (void)configureRestKit
 {
-    // initialize AFNetworking HTTPClient
-    NSURL *baseURL = [NSURL URLWithString:@"http://myfh.storyspot.de"];
-    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
-    
-    // initialize RestKit
-    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
-    
     // setup object mappings
     RKObjectMapping *responseMapping = [RKObjectMapping mappingForClass:[MFHUser class]];
     [responseMapping addAttributeMappingsFromArray:@[@"state", @"phoneId", @"accessToken"]];
