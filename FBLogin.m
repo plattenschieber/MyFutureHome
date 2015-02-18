@@ -7,6 +7,7 @@
 //
 
 #import "FBLogin.h"
+#import "MFHDataHandler.h"
 
 @interface FBLogin () <FBLoginViewDelegate>
 @end
@@ -33,8 +34,10 @@
 #pragma mark - FBLoginViewDelegate
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
-        // HERE WE CAN DO SOME STUFF WITH A LOGGED IN FB USER
-    }
+    // HERE WE CAN DO SOME STUFF WITH A LOGGED IN FB USER
+    MFHDataHandler *dataHandler = [MFHDataHandler init];
+    [dataHandler registerUser:@"SUPERGEILESTOKEN"];
+}
 
 #pragma mark -
 
