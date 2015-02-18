@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MFHUserSearchProfile.h"
+#import "MFHUserSettings.h"
 
 @interface MFHUser : NSObject
+
+@property NSMutableArray* searchProfiles;
+@property MFHUserSettings * settings;
 
 @property NSString* phoneId;
 @property NSString* accessToken;
