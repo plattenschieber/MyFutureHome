@@ -17,10 +17,15 @@
 @interface MFHDataHandler : MFHJSONResponse
 
 @property RKObjectManager *objectManager;
+@property RKObjectMapping *responseMapping;
+@property RKObjectMapping *requestMapping;
+@property RKResponseDescriptor *responseDescriptor;
+@property RKRequestDescriptor *requestDescriptor;
+
 
 //! given a unique phoneId, register this phoneId in the database and return a simple
 //! user object with an accessToken
-- (MFHUser *) registerUser: (NSString*) phoneId;
+- (void) registerUser: (MFHUser *) user withClass: (Class) objectClass;
 //! here we update the user object in our database
 - (bool) updateUser: (MFHUser *) user;
 //! here we add/update a search profile of a specific user
@@ -30,5 +35,7 @@
 
 //! catch all adverts for given searchProfile
 - (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile;
+
+- (void) setupObjectManagerWithRequestClass: (Class) requestClass withResponseClass: (Class) responseClass;
 
 @end
