@@ -8,11 +8,13 @@
 
 #import "MFHSession.h"
 #import "MFHDataHandler.h"
+#import "MFHUserSearchProfile.h"
 
 @implementation MFHSession
 
 static MFHUser* user = nil;
 static MFHDataHandler *dataHandler;
+static MFHUserSearchProfile *profile;
 
 + (void) start
 {
@@ -26,6 +28,18 @@ static MFHDataHandler *dataHandler;
 {
     NSLog(@"Und nun sind wir wieder zurück in der Session und geben den AT aus: \n");
     NSLog(@"%@",user.accessToken);
+}
+
++ (void) setUserSearchProfile
+{
+    profile = [profile init];
+    [dataHandler updateSearchProfileOfUser:user withUserSearchProfile:profile];
+    
+}
+
++ (void) getCatalogue
+{
+    [dataHandler getCatalogueOfUser:user withUserProfile:profile];
 }
 
 + (MFHUser *) getCurrentUser
