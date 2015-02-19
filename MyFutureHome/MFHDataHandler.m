@@ -80,8 +80,20 @@
                                   @"width" : @"100",
                                   @"height" : @"250",
                                   @"searchProfileId" : [searchProfile searchProfileId]};
+    
+    [self.objectManager getObjectsAtPath:@"/call"
+                              parameters:queryParams
+                                 success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                                     NSLog(@"(performGETRequestWithPath) Hat funktioniert, war geil. %@", mappingResult.firstObject);
+                                     
+                                     [MFHSession saveResponse: mappingResult];
+                                 }
+                                 failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                                     NSLog(@"(performGETRequestWithPath) Ein Satz mit X, das ist der Error: %@", error.description);
+                                 }];
+    // and remove the descriptors
+    [self clearObjectManager];
 
-    [self performGETRequestWithPath:@"/call" parameters:queryParams];
     return [NSMutableArray new];
 }
 
