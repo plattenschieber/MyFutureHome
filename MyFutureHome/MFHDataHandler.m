@@ -42,6 +42,17 @@
     [self performPOSTRequestWithObject:user path:@"init"];
 }
 
+
+//! here we update the user object in our database
+- (bool) updateUser: (MFHUser *) user
+{
+    [self setupObjectManagerWithRequestClass:[MFHUser class]
+                               ResponseClass:[MFHUser class]
+                              requestMapping:@[@"phoneId", @"accessToken", @"firstName", @"name", @"sex", @"job", @"birthdate", @"postalCode", @"children", @"city", @"email", @"emailConf", @"lat", @"lng", @"created", @"state", @"errors", @"warnings"]
+                             responseMapping:@[@"phoneId",@"accessToken"]
+                                 pathPattern:@"/user"];
+    [self performPOSTRequestWithObject:user path:@"user"];
+}
 - (void) setupObjectManagerWithRequestClass: (Class) requestClass
                               ResponseClass: (Class) responseClass
                              requestMapping: (NSArray *) requestMapping
@@ -100,12 +111,6 @@
     [self.objectManager removeResponseDescriptor:self.responseDescriptor];
 }
 
-//! here we update the user object in our database
-- (bool) updateUser: (MFHUser *) user
-{
-    return YES;
-    
-}
 //! here we add/update a search profile of a specific user
 - (bool) updateUserSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile
 {
