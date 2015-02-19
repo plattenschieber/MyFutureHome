@@ -20,7 +20,7 @@ static int count = 0;
 + (void) start
 {
     user = [[MFHUser alloc] init];
-    user.phoneId = [NSString stringWithFormat:@"%@%i", @"SUPERMEGAGEILESTOKEN", arc4random_uniform(74)];
+    user.phoneId = [NSString stringWithFormat:@"%@%i", @"SUPERMEGAGEILESTOKEN", arc4random()];
     dataHandler = [[MFHDataHandler alloc] init];
     [dataHandler registerUser:user];
     
