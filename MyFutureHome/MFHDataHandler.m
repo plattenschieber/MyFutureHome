@@ -70,12 +70,20 @@
 //! catch all adverts for given searchProfile
 - (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile
 {
-    [self setupObjectManagerWithRequestClass:[MFHUser class]
-                               ResponseClass:[MFHUser class]
-                              requestMapping:@[@"phoneId"]
-                             responseMapping:@[@"phoneId", @"accessToken", @"state", @"errors", @"warnings"]
-                                 pathPattern:@"/init"];
-    [self performPOSTRequestWithObject:user path:@"init"];
+    [self setupObjectManagerWithRequestClass:nil
+                               ResponseClass:[MFHUserSearchProfile class]
+                              requestMapping:nil
+                             responseMapping:@[@"phoneId", @"als"]
+                                 pathPattern:@"/call"];
+    
+    NSDictionary *queryParams = @{@"phoneId" : user.phoneId,
+                                  @"accessToken" : user.accessToken,
+                                  @"width" : @"100",
+                                  @"height" : @"250",
+                                  @"searchProfileId" : [searchProfile searchProfileId]};
+
+    [self performGETRequestWithPath:@"/call" parameters:queryParams];
+    return [NSMutableArray new];
 }
 
 - (void) setupObjectManagerWithRequestClass: (Class) requestClass
