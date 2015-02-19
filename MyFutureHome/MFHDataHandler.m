@@ -111,12 +111,6 @@
 {
     return YES;
 }
-//! here we add/update the users profile settings
-- (bool) updateUserSettingsOfUser: (MFHUser *) user withUserSettings: (MFHUserSettings *) settings
-{
-    return YES;
-}
-
 //! catch all adverts for given searchProfile
 - (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile
 {

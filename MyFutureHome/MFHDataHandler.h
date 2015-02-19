@@ -11,7 +11,6 @@
 #import "MFHJSONResponse.h"
 #import "MFHUser.h"
 #import "MFHUserSearchProfile.h"
-#import "MFHUserSettings.h"
 #import "MFHAdvert.h"
 
 @interface MFHDataHandler : MFHJSONResponse
@@ -30,8 +29,6 @@
 - (bool) updateUser: (MFHUser *) user;
 //! here we add/update a search profile of a specific user
 - (bool) updateUserSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile;
-//! here we add/update the users profile settings
-- (bool) updateUserSettingsOfUser: (MFHUser *) user withUserSettings: (MFHUserSettings *) settings;
 
 //! catch all adverts for given searchProfile
 - (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile;
