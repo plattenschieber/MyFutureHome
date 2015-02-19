@@ -125,7 +125,9 @@
 - (void) performPOSTRequestWithObject: (NSObject *) postObject
                                  path: (NSString *) path
 {
-    [self.objectManager postObject:postObject path:path parameters:nil//queryParams
+    [self.objectManager postObject:postObject
+                              path:path
+                        parameters:nil//queryParams
                            success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                NSLog(@"(performPOSTRequestWithObject) Hat funktioniert, war geil. %@", mappingResult.firstObject);
                                [MFHSession printUser];
