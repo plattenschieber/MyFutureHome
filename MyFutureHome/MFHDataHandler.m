@@ -111,10 +111,10 @@
 
 }
 
+// actually perform the request and handle the response
 - (void) performPOSTRequestWithObject: (NSObject *) postObject
                                  path: (NSString *) path
 {
-    // actually perform the request and handle the response
     [self.objectManager postObject:postObject path:path parameters:nil//queryParams
                            success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                NSLog(@"Hat funktioniert, war geil. %@", mappingResult.firstObject);
@@ -127,14 +127,12 @@
     [self clearObjectManager];
 }
 
+//! clear object manager by removing descriptors
 - (void) clearObjectManager
 {
-    // clear object manager by removing descriptors
     [self.objectManager removeRequestDescriptor:self.requestDescriptor];
     [self.objectManager removeResponseDescriptor:self.responseDescriptor];
 }
-
-
 
 
 @end
