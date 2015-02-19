@@ -53,6 +53,18 @@
                                  pathPattern:@"/user"];
     [self performPOSTRequestWithObject:user path:@"user"];
 }
+//! here we add/update a search profile of a specific user
+- (bool) updateUserSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile
+{
+    [self setupObjectManagerWithRequestClass:[MFHUser class]
+                               ResponseClass:[MFHUser class]
+                              requestMapping:@[@"phoneId", @"accessToken", @"searchProfileId", @"favoredStreet", @"favoredArea", @"favoredCity", @"buy", @"price", @"balcony", @"size", @"rooms", @"lat", @"lng",
+                                               @"state", @"errors", @"warnings" ]
+                             responseMapping:@[@"searchProfileId"]
+                                 pathPattern:@"/init"];
+    [self performPOSTRequestWithObject:user path:@"init"];
+}
+
 - (void) setupObjectManagerWithRequestClass: (Class) requestClass
                               ResponseClass: (Class) responseClass
                              requestMapping: (NSArray *) requestMapping
@@ -111,11 +123,6 @@
     [self.objectManager removeResponseDescriptor:self.responseDescriptor];
 }
 
-//! here we add/update a search profile of a specific user
-- (bool) updateUserSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile
-{
-    return YES;
-}
 //! catch all adverts for given searchProfile
 - (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile
 {
