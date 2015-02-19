@@ -37,7 +37,7 @@
     [self setupObjectManagerWithRequestClass:[MFHUser class]
                                ResponseClass:[MFHUser class]
                               requestMapping:@[@"phoneId"]
-                             responseMapping:@[@"state", @"phoneId", @"accessToken"]
+                             responseMapping:@[@"phoneId", @"accessToken", @"state", @"errors", @"warnings"]
                                  pathPattern:@"/init"];
     [self performPOSTRequestWithObject:user path:@"init"];
 }
