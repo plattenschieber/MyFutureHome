@@ -59,7 +59,7 @@
 {
     [self setupObjectManagerWithRequestClass:[MFHUserSearchProfile class]
                                ResponseClass:[MFHUserSearchProfile class]
-                              requestMapping:@[@"phoneId", @"accessToken", @"searchProfileId", @"favoredStreet", @"favoredArea", @"favoredCity", @"buy", @"price", @"balcony", @"size", @"rooms", @"lat", @"lng",
+                              requestMapping:@[@"phoneId", @"accessToken", @"favoredStreet", @"favoredArea", @"favoredCity", @"buy", @"price", @"balcony", @"size", @"rooms", @"lat", @"lng",
                                                @"state", @"errors", @"warnings" ]
                              responseMapping:@[@"searchProfileId"]
                                  pathPattern:@"/profil"];
