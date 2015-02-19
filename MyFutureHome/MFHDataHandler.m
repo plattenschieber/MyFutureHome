@@ -65,6 +65,17 @@
     [self performPOSTRequestWithObject:user path:@"init"];
 }
 
+//! catch all adverts for given searchProfile
+- (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile
+{
+    [self setupObjectManagerWithRequestClass:[MFHUser class]
+                               ResponseClass:[MFHUser class]
+                              requestMapping:@[@"phoneId"]
+                             responseMapping:@[@"phoneId", @"accessToken", @"state", @"errors", @"warnings"]
+                                 pathPattern:@"/init"];
+    [self performPOSTRequestWithObject:user path:@"init"];
+}
+
 - (void) setupObjectManagerWithRequestClass: (Class) requestClass
                               ResponseClass: (Class) responseClass
                              requestMapping: (NSArray *) requestMapping
@@ -123,11 +134,6 @@
     [self.objectManager removeResponseDescriptor:self.responseDescriptor];
 }
 
-//! catch all adverts for given searchProfile
-- (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile
-{
-    return [NSMutableArray new];
-}
 
 
 

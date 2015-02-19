@@ -33,6 +33,15 @@
 //! catch all adverts for given searchProfile
 - (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile;
 
-- (void) setupObjectManagerWithRequestClass: (Class) requestClass withResponseClass: (Class) responseClass;
+
+//! manager methods for configuring the REST calls 
+- (void) setupObjectManagerWithRequestClass: (Class) requestClass
+                              ResponseClass: (Class) responseClass
+                             requestMapping: (NSArray *) requestMapping
+                            responseMapping: (NSArray *) responseMapping
+                                pathPattern: (NSString *) pathPattern;
+- (void) performPOSTRequestWithObject: (NSObject *) postObject
+                                 path: (NSString *) path;
+- (void) clearObjectManager;
 
 @end
