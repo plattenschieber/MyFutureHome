@@ -15,6 +15,7 @@
 static MFHUser* user = nil;
 static MFHDataHandler *dataHandler;
 static MFHUserSearchProfile *profile;
+static int count = 0;
 
 + (void) start
 {
@@ -28,12 +29,15 @@ static MFHUserSearchProfile *profile;
 {
     NSLog(@"Und nun sind wir wieder zurück in der Session und geben den AT aus: \n");
     NSLog(@"%@",user.accessToken);
+    [self setUserSearchProfile];
 }
 
 + (void) setUserSearchProfile
 {
-    profile = [profile init];
-    [dataHandler updateSearchProfileOfUser:user withUserSearchProfile:profile];
+    if (count++ == 0)
+        profile = [[MFHUserSearchProfile alloc] init];
+    if (count == 1) [dataHandler updateSearchProfile:profile ofUser:user];
+    if (count == 2) [dataHandler getCatalogueOfUser:user withSearchProfile:profile];
     
 }
 
