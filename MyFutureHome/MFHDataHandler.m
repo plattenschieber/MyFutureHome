@@ -25,6 +25,7 @@
     
     // setup the serialization type
     [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/plain"];
+    [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/html"];
     [self.objectManager setRequestSerializationMIMEType:RKMIMETypeFormURLEncoded];
 
     return self;
