@@ -13,6 +13,7 @@
 @interface MFHUserSearchProfile : MFHJSONResponse
 
 @property NSMutableArray *adverts;
+@property NSString *als;
 
 @property NSString *searchProfileId;
 @property NSString *favoredStreet;
