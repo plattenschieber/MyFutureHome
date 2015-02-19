@@ -15,6 +15,7 @@
 static MFHUser* user = nil;
 static MFHDataHandler *dataHandler;
 static MFHUserSearchProfile *profile;
+static ALSResponse *alsresponse;
 static int count = 0;
 
 + (void) start
@@ -40,6 +41,11 @@ static int count = 0;
     if (count == 1) [dataHandler updateSearchProfile:profile ofUser:user];
     if (count == 2) [dataHandler getCatalogueOfUser:user withSearchProfile:profile];
     
+}
++ (void) saveResponse:(RKMappingResult *) result
+{
+    // DO IT RIGHT HERE
+    alsresponse = result.firstObject;
 }
 
 + (void) getCatalogue
