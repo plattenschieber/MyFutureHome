@@ -24,11 +24,11 @@
 
 //! given a unique phoneId, register this phoneId in the database and return a simple
 //! user object with an accessToken
-- (void) registerUser: (MFHUser *) user withClass: (Class) objectClass;
+- (void) registerUser: (MFHUser *) user;
 //! here we update the user object in our database
 - (bool) updateUser: (MFHUser *) user;
 //! here we add/update a search profile of a specific user
-- (bool) updateUserSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile;
+- (bool) updateSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile;
 
 //! catch all adverts for given searchProfile
 - (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile;

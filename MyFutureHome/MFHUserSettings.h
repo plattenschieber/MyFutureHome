@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MFHUserSettings 
+@interface MFHUserSettings : NSObject
 
 @property NSString *interval;
 @property NSString *maxNumberAdverts;

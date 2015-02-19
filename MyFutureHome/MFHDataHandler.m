@@ -32,14 +32,14 @@
 
 //! given a unique phoneId, register this phoneId in the database and return a simple
 //! user object with an accessToken
-- (void) registerUser: (MFHUser *) user withClass: (Class) objectClass
+- (void) registerUser: (MFHUser *) user
 {
     [self setupObjectManagerWithRequestClass:[MFHUser class]
                                ResponseClass:[MFHUser class]
                               requestMapping:@[@"phoneId"]
                              responseMapping:@[@"phoneId", @"accessToken", @"state", @"errors", @"warnings"]
                                  pathPattern:@"/init"];
-    [self performPOSTRequestWithObject:user path:@"init"];
+    [self performPOSTRequestWithObject:user path:@"/init"];
 }
 
 
@@ -49,20 +49,22 @@
     [self setupObjectManagerWithRequestClass:[MFHUser class]
                                ResponseClass:[MFHUser class]
                               requestMapping:@[@"phoneId", @"accessToken", @"firstName", @"name", @"sex", @"job", @"birthdate", @"postalCode", @"children", @"city", @"email", @"emailConf", @"lat", @"lng", @"created", @"state", @"errors", @"warnings"]
-                             responseMapping:@[@"phoneId",@"accessToken"]
+                             responseMapping:@[@"phoneId", @"state", @"errors", @"warnings"]
                                  pathPattern:@"/user"];
-    [self performPOSTRequestWithObject:user path:@"user"];
+    [self performPOSTRequestWithObject:user path:@"/user"];
+    return YES;
 }
 //! here we add/update a search profile of a specific user
-- (bool) updateUserSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile
+- (bool) updateSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile
 {
     [self setupObjectManagerWithRequestClass:[MFHUser class]
                                ResponseClass:[MFHUser class]
                               requestMapping:@[@"phoneId", @"accessToken", @"searchProfileId", @"favoredStreet", @"favoredArea", @"favoredCity", @"buy", @"price", @"balcony", @"size", @"rooms", @"lat", @"lng",
                                                @"state", @"errors", @"warnings" ]
                              responseMapping:@[@"searchProfileId"]
-                                 pathPattern:@"/init"];
-    [self performPOSTRequestWithObject:user path:@"init"];
+                                 pathPattern:@"/profil"];
+    [self performPOSTRequestWithObject:user path:@"/profil"];
+    return YES;
 }
 
 //! catch all adverts for given searchProfile
@@ -117,11 +119,11 @@
 {
     [self.objectManager postObject:postObject path:path parameters:nil//queryParams
                            success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-                               NSLog(@"Hat funktioniert, war geil. %@", mappingResult.firstObject);
+                               NSLog(@"(performPOSTRequestWithObject) Hat funktioniert, war geil. %@", mappingResult.firstObject);
                                [MFHSession printUser];
                            }
                            failure:^(RKObjectRequestOperation *operation, NSError *error) {
-                               NSLog(@"Ein Satz mit X, das ist der Error: %@", error.description);
+                               NSLog(@"(performPOSTRequestWithObject) Ein Satz mit X, das ist der Error: %@", error.description);
                            }];
     // and remove the descriptors
     [self clearObjectManager];

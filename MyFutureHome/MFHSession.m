@@ -18,8 +18,8 @@ static MFHDataHandler *dataHandler;
 {
     user = [[MFHUser alloc] init];
     user.phoneId = [NSString stringWithFormat:@"%@%i", @"SUPERMEGAGEILESTOKEN", arc4random_uniform(74)];
-    MFHDataHandler *dataHandler = [[MFHDataHandler alloc] init];
-    [dataHandler registerUser:user withClass:[MFHUser class]];
+    dataHandler = [[MFHDataHandler alloc] init];
+    [dataHandler registerUser:user];
 }
 
 + (void) printUser
