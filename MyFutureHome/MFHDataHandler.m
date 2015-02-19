@@ -136,6 +136,22 @@
     // and remove the descriptors
     [self clearObjectManager];
 }
+// actually perform the request and handle the response
+- (void) performGETRequestWithPath: (NSString *) path
+                        parameters: (NSDictionary *) parameters
+{
+    [self.objectManager getObjectsAtPath:path
+                              parameters:parameters
+                                 success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                                     NSLog(@"(performGETRequestWithPath) Hat funktioniert, war geil. %@", mappingResult.firstObject);
+                                     [MFHSession printUser];
+                                 }
+                                 failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                                     NSLog(@"(performGETRequestWithPath) Ein Satz mit X, das ist der Error: %@", error.description);
+                                 }];
+     // and remove the descriptors
+    [self clearObjectManager];
+}
 
 //! clear object manager by removing descriptors
 - (void) clearObjectManager
