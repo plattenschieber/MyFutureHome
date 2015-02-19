@@ -9,6 +9,9 @@
 #import "MFHDataHandler.h"
 #import "MFHJSONResponse.h"
 #import "MFHSession.h"
+#import "ALSResponse.h"
+#import "ALSPage.h"
+#import "ALSPageContent.h"
 
 @implementation MFHDataHandler
 
