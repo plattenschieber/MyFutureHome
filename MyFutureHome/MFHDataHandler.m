@@ -62,7 +62,7 @@
                               requestMapping:@{@"phoneId":@"phoneId", @"accessToken":@"accessToken", @"favoredStreet":@"favoredStreet", @"favoredArea":@"favoredArea", @"favoredCity":@"favoredCity", @"buy":@"buy", @"price":@"price", @"balcony":@"balcony", @"size":@"size", @"rooms":@"rooms", @"lat":@"lat", @"lng":@"lng"}
                              responseMapping:@{@"result.profilId":@"searchProfileId", @"state":@"state", @"errors":@"errors", @"warnings":@"warnings"}
                                  pathPattern:@"/profil"];
-    [self performPOSTRequestWithObject:user path:@"/profil"];
+    [self performPOSTRequestWithObject:searchProfile path:@"/profil"];
     return YES;
 }
 
