@@ -55,7 +55,7 @@
     return YES;
 }
 //! here we add/update a search profile of a specific user
-- (bool) updateSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile
+- (bool) updateSearchProfile: (MFHUserSearchProfile *) searchProfile ofUser: (MFHUser *) user
 {
     [self setupObjectManagerWithRequestClass:[MFHUserSearchProfile class]
                                ResponseClass:[MFHUserSearchProfile class]
@@ -68,7 +68,7 @@
 }
 
 //! catch all adverts for given searchProfile
-- (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile
+- (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withSearchProfile: (MFHUserSearchProfile *) searchProfile
 {
     [self setupObjectManagerWithRequestClass:nil
                                ResponseClass:[MFHUserSearchProfile class]
