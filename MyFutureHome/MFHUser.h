@@ -16,8 +16,6 @@
 @property NSMutableArray* searchProfiles;
 @property MFHUserSettings * settings;
 
-@property NSString* phoneId;
-@property NSString* accessToken;
 @property NSString *firstName;
 @property NSString *name;
 @property NSString *sex;

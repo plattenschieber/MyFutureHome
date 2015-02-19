@@ -13,5 +13,6 @@
 
 + (void) start;
 + (void) printUser;
++ (MFHUser *) getCurrentUser;
 
 @end

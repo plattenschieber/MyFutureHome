@@ -11,7 +11,7 @@
 
 @implementation MFHSession
 
-static MFHUser* user;
+static MFHUser* user = nil;
 static MFHDataHandler *dataHandler;
 
 + (void) start
@@ -28,4 +28,8 @@ static MFHDataHandler *dataHandler;
     NSLog(@"%@",user.accessToken);
 }
 
++ (MFHUser *) getCurrentUser
+{
+    return user;
+}
 @end

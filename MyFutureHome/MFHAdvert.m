@@ -7,7 +7,13 @@
 //
 
 #import "MFHAdvert.h"
+#import "MFHSession.h"
 
 @implementation MFHAdvert
 
+- (id) init
+{
+    self = [super init];
+    return self;
+}
 @end
