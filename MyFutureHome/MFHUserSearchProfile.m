@@ -16,16 +16,16 @@
     self = [super init];
     
     self.searchProfileId = @"1234";
-    self.favoredStreet = @"Peterstr.";
+    self.favoredStreet = @"Zülpicher Str. 12";
     self.favoredArea = @"NRW";
-    self.favoredCity = @"Cologne";
-    self.buy = @"No";
+    self.favoredCity = @"Köln Innenstadt";
+    self.buy = nil;
     self.price = @"750";
-    self.balcony = @"Yes";
+    self.balcony = @"Y";
     self.size = @"52";
     self.rooms = @"3";
-    self.lat = @"30.3";
-    self.lng = @"45.4";
+    self.lat = @"50.9295283";
+    self.lng = @"6.9379229";
     
     return self;
 }
