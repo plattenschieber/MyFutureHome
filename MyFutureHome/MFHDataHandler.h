@@ -28,7 +28,7 @@
 //! here we update the user object in our database
 - (bool) updateUser: (MFHUser *) user;
 //! here we add/update a search profile of a specific user
-- (bool) updateSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile;
+- (bool) updateSearchProfile: (MFHUserSearchProfile *) searchProfile ofUser: (MFHUser *) user;
 
 //! catch all adverts for given searchProfile
 - (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile;
@@ -37,8 +37,8 @@
 //! manager methods for configuring the REST calls 
 - (void) setupObjectManagerWithRequestClass: (Class) requestClass
                               ResponseClass: (Class) responseClass
-                             requestMapping: (NSArray *) requestMapping
-                            responseMapping: (NSArray *) responseMapping
+                             requestMapping: (NSDictionary *) requestMapping
+                            responseMapping: (NSDictionary *) responseMapping
                                 pathPattern: (NSString *) pathPattern;
 - (void) performPOSTRequestWithObject: (NSObject *) postObject
                                  path: (NSString *) path;

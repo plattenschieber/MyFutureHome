@@ -23,6 +23,7 @@ static int count = 0;
     user.phoneId = [NSString stringWithFormat:@"%@%i", @"SUPERMEGAGEILESTOKEN", arc4random_uniform(74)];
     dataHandler = [[MFHDataHandler alloc] init];
     [dataHandler registerUser:user];
+    
 }
 
 + (void) printUser
@@ -43,7 +44,7 @@ static int count = 0;
 
 + (void) getCatalogue
 {
-    [dataHandler getCatalogueOfUser:user withUserProfile:profile];
+    [dataHandler getCatalogueOfUser:user withSearchProfile:profile];
 }
 
 + (MFHUser *) getCurrentUser

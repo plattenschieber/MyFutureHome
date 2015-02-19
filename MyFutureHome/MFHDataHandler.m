@@ -36,8 +36,8 @@
 {
     [self setupObjectManagerWithRequestClass:[MFHUser class]
                                ResponseClass:[MFHUser class]
-                              requestMapping:@[@"phoneId"]
-                             responseMapping:@[@"phoneId", @"accessToken", @"state", @"errors", @"warnings"]
+                              requestMapping:@{@"phoneId":@"phoneId"}
+                             responseMapping:@{@"phoneId":@"phoneId", @"accessToken":@"accessToken", @"state":@"state", @"errors":@"errors", @"warnings":@"warnings"}
                                  pathPattern:@"/init"];
     [self performPOSTRequestWithObject:user path:@"/init"];
 }
@@ -48,8 +48,8 @@
 {
     [self setupObjectManagerWithRequestClass:[MFHUser class]
                                ResponseClass:[MFHUser class]
-                              requestMapping:@[@"phoneId", @"accessToken", @"firstName", @"name", @"sex", @"job", @"birthdate", @"postalCode", @"children", @"city", @"email", @"emailConf", @"lat", @"lng", @"created", @"state", @"errors", @"warnings"]
-                             responseMapping:@[@"phoneId", @"state", @"errors", @"warnings"]
+                              requestMapping:@{@"phoneId":@"phoneId", @"accessToken":@"accessToken", @"firstName":@"firstName", @"name":@"name", @"sex":@"sex", @"job":@"job", @"birthdate":@"birthdate", @"postalCode":@"postalCode", @"children":@"children", @"city":@"city", @"email":@"email", @"emailConf":@"emailConf", @"lat":@"lat", @"lng":@"lng", @"created":@"created", @"state":@"state", @"errors":@"errors", @"warnings":@"warnings"}
+                             responseMapping:@{@"phoneId":@"phoneId", @"state":@"state", @"errors":@"errors", @"warnings":@"warnings"}
                                  pathPattern:@"/user"];
     [self performPOSTRequestWithObject:user path:@"/user"];
     return YES;
@@ -59,9 +59,8 @@
 {
     [self setupObjectManagerWithRequestClass:[MFHUserSearchProfile class]
                                ResponseClass:[MFHUserSearchProfile class]
-                              requestMapping:@[@"phoneId", @"accessToken", @"favoredStreet", @"favoredArea", @"favoredCity", @"buy", @"price", @"balcony", @"size", @"rooms", @"lat", @"lng",
-                                               @"state", @"errors", @"warnings" ]
-                             responseMapping:@[@"searchProfileId"]
+                              requestMapping:@{@"phoneId":@"phoneId", @"accessToken":@"accessToken", @"favoredStreet":@"favoredStreet", @"favoredArea":@"favoredArea", @"favoredCity":@"favoredCity", @"buy":@"buy", @"price":@"price", @"balcony":@"balcony", @"size":@"size", @"rooms":@"rooms", @"lat":@"lat", @"lng":@"lng"}
+                             responseMapping:@{@"result.profilId":@"searchProfileId", @"state":@"state", @"errors":@"errors", @"warnings":@"warnings"}
                                  pathPattern:@"/profil"];
     [self performPOSTRequestWithObject:user path:@"/profil"];
     return YES;
@@ -88,17 +87,17 @@
 
 - (void) setupObjectManagerWithRequestClass: (Class) requestClass
                               ResponseClass: (Class) responseClass
-                             requestMapping: (NSArray *) requestMapping
-                            responseMapping: (NSArray *) responseMapping
+                             requestMapping: (NSDictionary *) requestMapping
+                            responseMapping: (NSDictionary *) responseMapping
                                 pathPattern: (NSString *) pathPattern
 {
     // setup response mapping
     self.responseMapping = [RKObjectMapping mappingForClass:responseClass];
-    [self.responseMapping addAttributeMappingsFromArray:responseMapping];
+    [self.responseMapping addAttributeMappingsFromDictionary:responseMapping];
     
     // setup request mapping
     self.requestMapping = [RKObjectMapping requestMapping];
-    [self.requestMapping addAttributeMappingsFromArray:requestMapping];
+    [self.requestMapping addAttributeMappingsFromDictionary:requestMapping];
     
     // register mappings with the provider using a response descriptor
     self.responseDescriptor =
