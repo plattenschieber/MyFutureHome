@@ -27,4 +27,9 @@
 @property NSString *lng;
 @property NSString *created;
 
+@property int height;
+@property int width;
+@property int posX;
+@property int posY;
+
 @end
