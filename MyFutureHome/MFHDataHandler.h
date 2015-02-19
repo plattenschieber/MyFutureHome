@@ -31,8 +31,7 @@
 - (bool) updateSearchProfile: (MFHUserSearchProfile *) searchProfile ofUser: (MFHUser *) user;
 
 //! catch all adverts for given searchProfile
-- (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile;
-
+- (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withSearchProfile: (MFHUserSearchProfile *) searchProfile;
 
 //! manager methods for configuring the REST calls 
 - (void) setupObjectManagerWithRequestClass: (Class) requestClass
