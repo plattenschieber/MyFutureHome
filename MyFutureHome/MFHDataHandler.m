@@ -57,8 +57,8 @@
 //! here we add/update a search profile of a specific user
 - (bool) updateSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile
 {
-    [self setupObjectManagerWithRequestClass:[MFHUser class]
-                               ResponseClass:[MFHUser class]
+    [self setupObjectManagerWithRequestClass:[MFHUserSearchProfile class]
+                               ResponseClass:[MFHUserSearchProfile class]
                               requestMapping:@[@"phoneId", @"accessToken", @"searchProfileId", @"favoredStreet", @"favoredArea", @"favoredCity", @"buy", @"price", @"balcony", @"size", @"rooms", @"lat", @"lng",
                                                @"state", @"errors", @"warnings" ]
                              responseMapping:@[@"searchProfileId"]
