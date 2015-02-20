@@ -278,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PEu-Xj-BDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2380" y="-1526"/>
+            <point key="canvasLocation" x="-2676" y="-1750"/>
         </scene>
         <!--Katalog-->
         <scene sceneID="0eP-yH-Uty">
@@ -324,7 +324,7 @@
         <!--Navigation Controller-->
         <scene sceneID="glp-qQ-CHs">
             <objects>
-                <navigationController definesPresentationContext="YES" id="z0l-uQ-Inu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MFHNavigationController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="z0l-uQ-Inu" customClass="MFHNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0QJ-ww-9PQ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

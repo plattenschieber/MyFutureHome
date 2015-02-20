@@ -9,6 +9,7 @@
 #import "FBLogin.h"
 #import "MFHDataHandler.h"
 #import "MFHSession.h"
+#import "MFHNavigationController.h"
 
 @interface FBLogin () <FBLoginViewDelegate>
 @end
@@ -37,6 +38,8 @@
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
     // HERE WE CAN DO SOME STUFF WITH A LOGGED IN FB USER
     [MFHSession start];
+    MFHNavigationController *navcon = [self.storyboard instantiateViewControllerWithIdentifier:@"MFHNavigationController"];
+    [self presentViewController:navcon animated:YES completion:nil];
 }
 
 #pragma mark -
