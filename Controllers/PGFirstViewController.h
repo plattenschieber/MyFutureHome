@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PGFirstViewController : UIViewController
+@interface PGFirstViewController : UICollectionViewController
 
 @end
