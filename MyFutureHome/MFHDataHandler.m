@@ -12,6 +12,10 @@
 #import "ALSResponse.h"
 #import "ALSPage.h"
 #import "ALSPageContent.h"
+#import "ALSPageContentPosition.h"
+#import "ALSDocumentElement.h"
+#import "ALSDocumentElementContent.h"
+#import "ALSDocumentElementSubContent.h"
 
 @implementation MFHDataHandler
 
