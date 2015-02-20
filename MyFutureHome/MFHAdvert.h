@@ -14,7 +14,7 @@
 @property NSString *advertId;
 @property NSString *externId;
 @property NSString *name;
-@property NSString *advertDescription;
+@property NSString *description;
 @property NSString *postalCode;
 @property NSString *price;
 @property NSString *balcony;
@@ -26,5 +26,10 @@
 @property NSString *lat;
 @property NSString *lng;
 @property NSString *created;
+
+@property int height;
+@property int width;
+@property int posX;
+@property int posY;
 
 @end

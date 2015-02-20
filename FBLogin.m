@@ -8,6 +8,7 @@
 
 #import "FBLogin.h"
 #import "MFHDataHandler.h"
+#import "MFHSession.h"
 
 @interface FBLogin () <FBLoginViewDelegate>
 @end
@@ -35,9 +36,7 @@
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
     // HERE WE CAN DO SOME STUFF WITH A LOGGED IN FB USER
-    MFHDataHandler *dataHandler = [[MFHDataHandler alloc] init];
-    MFHUser *testUser = [dataHandler registerUser:@"SUPERGEILESTOKEN"];
-
+    [MFHSession start];
 }
 
 #pragma mark -

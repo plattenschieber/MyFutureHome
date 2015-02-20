@@ -7,7 +7,26 @@
 //
 
 #import "MFHUserSearchProfile.h"
+#import "MFHSession.h"
 
 @implementation MFHUserSearchProfile
 
+- (id) init
+{
+    self = [super init];
+    
+    self.searchProfileId = @"1234";
+    self.favoredStreet = @"Zülpicher Str. 12";
+    self.favoredArea = @"NRW";
+    self.favoredCity = @"Köln Innenstadt";
+    self.buy = nil;
+    self.price = @"750";
+    self.balcony = @"Y";
+    self.size = @"52";
+    self.rooms = @"3";
+    self.lat = @"50.9295283";
+    self.lng = @"6.9379229";
+    
+    return self;
+}
 @end

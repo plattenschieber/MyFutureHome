@@ -11,24 +11,36 @@
 #import "MFHJSONResponse.h"
 #import "MFHUser.h"
 #import "MFHUserSearchProfile.h"
-#import "MFHUserSettings.h"
 #import "MFHAdvert.h"
 
 @interface MFHDataHandler : MFHJSONResponse
 
 @property RKObjectManager *objectManager;
+@property RKObjectMapping *responseMapping;
+@property RKObjectMapping *requestMapping;
+@property RKResponseDescriptor *responseDescriptor;
+@property RKRequestDescriptor *requestDescriptor;
+
 
 //! given a unique phoneId, register this phoneId in the database and return a simple
 //! user object with an accessToken
-- (MFHUser *) registerUser: (NSString*) phoneId;
+- (void) registerUser: (MFHUser *) user;
 //! here we update the user object in our database
 - (bool) updateUser: (MFHUser *) user;
 //! here we add/update a search profile of a specific user
-- (bool) updateUserSearchProfileOfUser: (MFHUser *) user withUserSearchProfile: (MFHUserSearchProfile *) searchProfile;
-//! here we add/update the users profile settings
-- (bool) updateUserSettingsOfUser: (MFHUser *) user withUserSettings: (MFHUserSettings *) settings;
+- (bool) updateSearchProfile: (MFHUserSearchProfile *) searchProfile ofUser: (MFHUser *) user;
 
 //! catch all adverts for given searchProfile
-- (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withUserProfile: (MFHUserSearchProfile *) searchProfile;
+- (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withSearchProfile: (MFHUserSearchProfile *) searchProfile;
+
+//! manager methods for configuring the REST calls 
+- (void) setupObjectManagerWithRequestClass: (Class) requestClass
+                              ResponseClass: (Class) responseClass
+                             requestMapping: (NSDictionary *) requestMapping
+                            responseMapping: (NSDictionary *) responseMapping
+                                pathPattern: (NSString *) pathPattern;
+- (void) performPOSTRequestWithObject: (NSObject *) postObject
+                                 path: (NSString *) path;
+- (void) clearObjectManager;
 
 @end

@@ -32,7 +32,7 @@
     // Override point for customization after application launch.
     
     // Override point for customization after application launch.
-        [FBLoginView class];
+    [FBLoginView class];
     return YES;
 }
 

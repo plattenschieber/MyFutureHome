@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A2977431A95331500D75A4F /* MFHSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2977421A95331500D75A4F /* MFHSession.m */; };
 		3A29C3F91A43479500A99F8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C3F81A43479500A99F8F /* main.m */; };
 		3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C3FB1A43479500A99F8F /* AppDelegate.m */; };
 		3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C3FD1A43479500A99F8F /* MyFutureHome.xcdatamodeld */; };
@@ -16,6 +17,9 @@
 		3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4081A43479500A99F8F /* LaunchScreen.xib */; };
 		3A29C4161A43479500A99F8F /* MyFutureHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */; };
 		3A29C4221A43583D00A99F8F /* gitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4211A43583D00A99F8F /* gitter.png */; };
+		3A3ED0901A967AD4005FC161 /* ALSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED08F1A967AD4005FC161 /* ALSResponse.m */; };
+		3A3ED0931A967B16005FC161 /* ALSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED0921A967B16005FC161 /* ALSPage.m */; };
+		3A3ED0961A968B0D005FC161 /* ALSPageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED0951A968B0D005FC161 /* ALSPageContent.m */; };
 		3A7369FE1A950F0900392EA0 /* MFHJSONResponse.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */; };
 		3A736A021A950FA400392EA0 /* MFHJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A736A011A950FA400392EA0 /* MFHJSONResponse.m */; };
 		3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */; };
@@ -29,6 +33,10 @@
 		3AE5B9FF1A949E3B003863DC /* MFHUserSearchProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5B9FE1A949E3B003863DC /* MFHUserSearchProfile.m */; };
 		3AE5BA021A94A0B5003863DC /* MFHUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5BA011A94A0B5003863DC /* MFHUserSettings.m */; };
 		3AE5BA051A94A1B7003863DC /* MFHAdvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5BA041A94A1B7003863DC /* MFHAdvert.m */; };
+		3AF47E651A96AC2700D11B7C /* ALSPageContentPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E641A96AC2700D11B7C /* ALSPageContentPosition.m */; };
+		3AF47E691A96B4D300D11B7C /* ALSDocumentElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E681A96B4D300D11B7C /* ALSDocumentElement.m */; };
+		3AF47E6C1A96BA3500D11B7C /* ALSDocumentElementContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E6B1A96BA3500D11B7C /* ALSDocumentElementContent.m */; };
+		3AF47E6F1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E6E1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m */; };
 		7DA209B48929F08841F2F990 /* libPods-MyFutureHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864B9D51B8F6B2D7F220C11C /* libPods-MyFutureHome.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		2DCD16A2FFE20450CE928B85 /* Pods-MyFutureHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFutureHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome.release.xcconfig"; sourceTree = "<group>"; };
+		3A2977411A95331500D75A4F /* MFHSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHSession.h; sourceTree = "<group>"; };
+		3A2977421A95331500D75A4F /* MFHSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHSession.m; sourceTree = "<group>"; };
 		3A29C3F31A43479500A99F8F /* MyFutureHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFutureHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A29C3F71A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29C3F81A43479500A99F8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +69,12 @@
 		3A29C4141A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFutureHomeTests.m; sourceTree = "<group>"; };
 		3A29C4211A43583D00A99F8F /* gitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitter.png; sourceTree = "<group>"; };
+		3A3ED08E1A967AD4005FC161 /* ALSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSResponse.h; sourceTree = "<group>"; };
+		3A3ED08F1A967AD4005FC161 /* ALSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSResponse.m; sourceTree = "<group>"; };
+		3A3ED0911A967B16005FC161 /* ALSPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSPage.h; sourceTree = "<group>"; };
+		3A3ED0921A967B16005FC161 /* ALSPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSPage.m; sourceTree = "<group>"; };
+		3A3ED0941A968B0D005FC161 /* ALSPageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSPageContent.h; sourceTree = "<group>"; };
+		3A3ED0951A968B0D005FC161 /* ALSPageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSPageContent.m; sourceTree = "<group>"; };
 		3A736A011A950FA400392EA0 /* MFHJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponse.m; sourceTree = "<group>"; };
 		3A87EB0D1A822F7600E00F90 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponse.h; sourceTree = "<group>"; };
@@ -83,6 +99,14 @@
 		3AE5BA011A94A0B5003863DC /* MFHUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHUserSettings.m; sourceTree = "<group>"; };
 		3AE5BA031A94A1B7003863DC /* MFHAdvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHAdvert.h; sourceTree = "<group>"; };
 		3AE5BA041A94A1B7003863DC /* MFHAdvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHAdvert.m; sourceTree = "<group>"; };
+		3AF47E631A96AC2700D11B7C /* ALSPageContentPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSPageContentPosition.h; sourceTree = "<group>"; };
+		3AF47E641A96AC2700D11B7C /* ALSPageContentPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSPageContentPosition.m; sourceTree = "<group>"; };
+		3AF47E671A96B4D300D11B7C /* ALSDocumentElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSDocumentElement.h; sourceTree = "<group>"; };
+		3AF47E681A96B4D300D11B7C /* ALSDocumentElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSDocumentElement.m; sourceTree = "<group>"; };
+		3AF47E6A1A96BA3500D11B7C /* ALSDocumentElementContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSDocumentElementContent.h; sourceTree = "<group>"; };
+		3AF47E6B1A96BA3500D11B7C /* ALSDocumentElementContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSDocumentElementContent.m; sourceTree = "<group>"; };
+		3AF47E6D1A96BA4A00D11B7C /* ALSDocumentElementSubContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSDocumentElementSubContent.h; sourceTree = "<group>"; };
+		3AF47E6E1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSDocumentElementSubContent.m; sourceTree = "<group>"; };
 		864B9D51B8F6B2D7F220C11C /* libPods-MyFutureHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFutureHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5851EBF0CF9D026525C34C4 /* Pods-MyFutureHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFutureHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +155,7 @@
 		3A29C3F51A43479500A99F8F /* MyFutureHome */ = {
 			isa = PBXGroup;
 			children = (
+				3AF47E661A96B3BC00D11B7C /* ALS */,
 				3AE5B9FC1A949799003863DC /* MFH */,
 				3AC3AA9C1A76C51600BBB294 /* Controllers */,
 				3A892A4D1A5C48E000370BC8 /* FBLogin.h */,
@@ -203,20 +228,43 @@
 		3AE5B9FC1A949799003863DC /* MFH */ = {
 			isa = PBXGroup;
 			children = (
-				3A736A011A950FA400392EA0 /* MFHJSONResponse.m */,
-				3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */,
-				3AE5B9FD1A949E3B003863DC /* MFHUserSearchProfile.h */,
-				3AE5B9FE1A949E3B003863DC /* MFHUserSearchProfile.m */,
+				3A2977411A95331500D75A4F /* MFHSession.h */,
+				3A2977421A95331500D75A4F /* MFHSession.m */,
+				3AE5B9F61A9496BB003863DC /* MFHDataHandler.h */,
+				3AE5B9F71A9496BB003863DC /* MFHDataHandler.m */,
 				3AE5B9F91A94978E003863DC /* MFHUser.h */,
 				3AE5B9FA1A94978E003863DC /* MFHUser.m */,
 				3AE5BA001A94A0B5003863DC /* MFHUserSettings.h */,
 				3AE5BA011A94A0B5003863DC /* MFHUserSettings.m */,
-				3AE5B9F61A9496BB003863DC /* MFHDataHandler.h */,
-				3AE5B9F71A9496BB003863DC /* MFHDataHandler.m */,
+				3AE5B9FD1A949E3B003863DC /* MFHUserSearchProfile.h */,
+				3AE5B9FE1A949E3B003863DC /* MFHUserSearchProfile.m */,
 				3AE5BA031A94A1B7003863DC /* MFHAdvert.h */,
 				3AE5BA041A94A1B7003863DC /* MFHAdvert.m */,
+				3A736A011A950FA400392EA0 /* MFHJSONResponse.m */,
+				3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */,
 			);
 			name = MFH;
+			sourceTree = "<group>";
+		};
+		3AF47E661A96B3BC00D11B7C /* ALS */ = {
+			isa = PBXGroup;
+			children = (
+				3AF47E6A1A96BA3500D11B7C /* ALSDocumentElementContent.h */,
+				3AF47E6B1A96BA3500D11B7C /* ALSDocumentElementContent.m */,
+				3AF47E6D1A96BA4A00D11B7C /* ALSDocumentElementSubContent.h */,
+				3AF47E6E1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m */,
+				3AF47E671A96B4D300D11B7C /* ALSDocumentElement.h */,
+				3AF47E681A96B4D300D11B7C /* ALSDocumentElement.m */,
+				3A3ED0941A968B0D005FC161 /* ALSPageContent.h */,
+				3A3ED0951A968B0D005FC161 /* ALSPageContent.m */,
+				3A3ED0911A967B16005FC161 /* ALSPage.h */,
+				3A3ED0921A967B16005FC161 /* ALSPage.m */,
+				3A3ED08E1A967AD4005FC161 /* ALSResponse.h */,
+				3A3ED08F1A967AD4005FC161 /* ALSResponse.m */,
+				3AF47E631A96AC2700D11B7C /* ALSPageContentPosition.h */,
+				3AF47E641A96AC2700D11B7C /* ALSPageContentPosition.m */,
+			);
+			name = ALS;
 			sourceTree = "<group>";
 		};
 		E6BD28091A5E8DA0BF9F07C9 /* Pods */ = {
@@ -365,21 +413,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A736A021A950FA400392EA0 /* MFHJSONResponse.m in Sources */,
+				3AF47E6C1A96BA3500D11B7C /* ALSDocumentElementContent.m in Sources */,
+				3A3ED0931A967B16005FC161 /* ALSPage.m in Sources */,
 				3A7369FE1A950F0900392EA0 /* MFHJSONResponse.h in Sources */,
 				3AC3AAA71A76C51600BBB294 /* PGSideDrawerController.m in Sources */,
 				3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */,
 				3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */,
+				3AF47E691A96B4D300D11B7C /* ALSDocumentElement.m in Sources */,
 				3AE5B9FF1A949E3B003863DC /* MFHUserSearchProfile.m in Sources */,
+				3AF47E651A96AC2700D11B7C /* ALSPageContentPosition.m in Sources */,
 				3AE5BA051A94A1B7003863DC /* MFHAdvert.m in Sources */,
 				3AE5B9FB1A94978E003863DC /* MFHUser.m in Sources */,
 				3AE5BA021A94A0B5003863DC /* MFHUserSettings.m in Sources */,
+				3A3ED0961A968B0D005FC161 /* ALSPageContent.m in Sources */,
 				3A29C3F91A43479500A99F8F /* main.m in Sources */,
 				3AC3AAA81A76C51600BBB294 /* PGViewController.m in Sources */,
 				3AC3AAA61A76C51600BBB294 /* PGSecondViewController.m in Sources */,
+				3A2977431A95331500D75A4F /* MFHSession.m in Sources */,
 				3A29C4021A43479500A99F8F /* ViewController.m in Sources */,
+				3AF47E6F1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m in Sources */,
 				3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */,
 				3AE5B9F81A9496BB003863DC /* MFHDataHandler.m in Sources */,
 				3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */,
+				3A3ED0901A967AD4005FC161 /* ALSResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

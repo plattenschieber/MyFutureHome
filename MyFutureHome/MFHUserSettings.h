@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MFHJSONResponse.h"
 
-@interface MFHUserSettings : MFHJSONResponse
+@interface MFHUserSettings : NSObject
 
 @property NSString *interval;
 @property NSString *maxNumberAdverts;
