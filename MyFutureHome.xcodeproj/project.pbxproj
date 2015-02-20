@@ -38,6 +38,7 @@
 		3AF47E6C1A96BA3500D11B7C /* ALSDocumentElementContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E6B1A96BA3500D11B7C /* ALSDocumentElementContent.m */; };
 		3AF47E6F1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E6E1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m */; };
 		3AF47E721A96C7B500D11B7C /* MFHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E711A96C7B500D11B7C /* MFHNavigationController.m */; };
+		3AF47E751A9706C900D11B7C /* MFHAdvertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF47E741A9706C900D11B7C /* MFHAdvertCell.m */; };
 		7DA209B48929F08841F2F990 /* libPods-MyFutureHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864B9D51B8F6B2D7F220C11C /* libPods-MyFutureHome.a */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,8 @@
 		3AF47E6E1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSDocumentElementSubContent.m; sourceTree = "<group>"; };
 		3AF47E701A96C7B500D11B7C /* MFHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHNavigationController.h; sourceTree = "<group>"; };
 		3AF47E711A96C7B500D11B7C /* MFHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHNavigationController.m; sourceTree = "<group>"; };
+		3AF47E731A9706C900D11B7C /* MFHAdvertCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHAdvertCell.h; sourceTree = "<group>"; };
+		3AF47E741A9706C900D11B7C /* MFHAdvertCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHAdvertCell.m; sourceTree = "<group>"; };
 		864B9D51B8F6B2D7F220C11C /* libPods-MyFutureHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFutureHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5851EBF0CF9D026525C34C4 /* Pods-MyFutureHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFutureHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFutureHome/Pods-MyFutureHome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +218,8 @@
 		3AC3AA9C1A76C51600BBB294 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3AF47E731A9706C900D11B7C /* MFHAdvertCell.h */,
+				3AF47E741A9706C900D11B7C /* MFHAdvertCell.m */,
 				3AF47E701A96C7B500D11B7C /* MFHNavigationController.h */,
 				3AF47E711A96C7B500D11B7C /* MFHNavigationController.m */,
 				3AC3AA9D1A76C51600BBB294 /* PGFirstViewController.h */,
@@ -438,6 +443,7 @@
 				3A2977431A95331500D75A4F /* MFHSession.m in Sources */,
 				3A29C4021A43479500A99F8F /* ViewController.m in Sources */,
 				3AF47E6F1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m in Sources */,
+				3AF47E751A9706C900D11B7C /* MFHAdvertCell.m in Sources */,
 				3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */,
 				3AE5B9F81A9496BB003863DC /* MFHDataHandler.m in Sources */,
 				3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */,
