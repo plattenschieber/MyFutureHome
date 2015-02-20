@@ -77,11 +77,52 @@
 //! catch all adverts for given searchProfile
 - (NSMutableArray *) getCatalogueOfUser: (MFHUser *) user withSearchProfile: (MFHUserSearchProfile *) searchProfile
 {
-    [self setupObjectManagerWithRequestClass:nil
-                               ResponseClass:[MFHUserSearchProfile class]
-                              requestMapping:nil
-                             responseMapping:@[@"phoneId", @"als"]
-                                 pathPattern:@"/call"];
+    // setup response mapping
+    RKObjectMapping *documentMapping = [RKObjectMapping mappingForClass:[ALSResponse class]];
+    [documentMapping addAttributeMappingsFromDictionary:@{@"state":@"state", @"phoneId":@"phoneId"}];
+    
+    RKObjectMapping *pageMapping = [RKObjectMapping mappingForClass:[ALSPage class]];
+    [pageMapping addAttributeMappingsFromDictionary:@{@"height":@"height", @"width":@"width", @"pageNumber":@"pageNumber"}];
+    
+    RKObjectMapping *pageContentsMapping = [RKObjectMapping mappingForClass:[ALSPageContent class]];
+    [pageContentsMapping addAttributeMappingsFromDictionary:@{@"contentType":@"contentType"}];
+
+    RKObjectMapping *pageContentPositionMapping = [RKObjectMapping mappingForClass:[ALSPageContentPosition class]];
+    [pageContentPositionMapping addAttributeMappingsFromDictionary:@{@"x":@"x", @"y":@"y", @"width":@"width", @"height":@"height"}];
+
+    RKObjectMapping *documentElementsMapping = [RKObjectMapping mappingForClass:[ALSDocumentElement class]];
+    [documentElementsMapping addAttributeMappingsFromDictionary:@{@"class":@"elementClass", @"type":@"elementType", @"text":@"text", @"level":@"level"}];
+    
+    RKObjectMapping *documentElementsContentMapping = [RKObjectMapping mappingForClass:[ALSDocumentElementContent class]];
+    [documentElementsContentMapping addAttributeMappingsFromDictionary:@{@"class":@"elementClass", @"type":@"elementType", @"url":@"url", @"target":@"target"}];
+    
+    RKObjectMapping *documentElementsSubContentMapping = [RKObjectMapping mappingForClass:[ALSDocumentElementSubContent class]];
+    [documentElementsSubContentMapping addAttributeMappingsFromDictionary:@{@"class":@"elementClass", @"type":@"elementType", @"text":@"text", @"style":@"style", @"url":@"url"}];
+    
+    
+    RKRelationshipMapping *pagesRelationship = [RKRelationshipMapping relationshipMappingFromKeyPath:@"alsDocumentPages" toKeyPath:@"pages" withMapping:pageMapping];
+    RKRelationshipMapping *pageContentsRelation = [RKRelationshipMapping relationshipMappingFromKeyPath:@"layout.contents" toKeyPath:@"contents" withMapping:pageContentsMapping];
+    RKRelationshipMapping *pageContentsPositionRelation = [RKRelationshipMapping relationshipMappingFromKeyPath:@"position" toKeyPath:@"position" withMapping:pageContentPositionMapping];
+    RKRelationshipMapping *documentElementsRelation = [RKRelationshipMapping relationshipMappingFromKeyPath:@"documentElements" toKeyPath:@"documentElements" withMapping:documentElementsMapping];
+    RKRelationshipMapping *documentElementsContentRelation = [RKRelationshipMapping relationshipMappingFromKeyPath:@"contents" toKeyPath:@"contents" withMapping:documentElementsContentMapping];
+    RKRelationshipMapping *documentElementsSubContentRelation = [RKRelationshipMapping relationshipMappingFromKeyPath:@"contents" toKeyPath:@"contents" withMapping:documentElementsSubContentMapping];
+
+    [documentElementsContentMapping addPropertyMapping:documentElementsSubContentRelation];
+    [documentElementsMapping addPropertyMapping:documentElementsContentRelation];
+    [pageContentsMapping addPropertyMapping:documentElementsRelation];
+    [pageContentsMapping addPropertyMapping:pageContentsPositionRelation];
+    [pageMapping addPropertyMapping:pageContentsRelation];
+    [documentMapping addPropertyMapping:pagesRelationship];
+    
+    
+    RKResponseDescriptor *responseDesc =
+    [RKResponseDescriptor responseDescriptorWithMapping:documentMapping
+                                                 method:RKRequestMethodAny
+                                            pathPattern:@"/call"
+                                                keyPath:@"als"
+                                            statusCodes:[NSIndexSet indexSetWithIndex:200]];
+    
+    [self.objectManager addResponseDescriptor:responseDesc];
     
     NSDictionary *queryParams = @{@"phoneId" : user.phoneId,
                                   @"accessToken" : user.accessToken,
