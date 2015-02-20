@@ -17,5 +17,7 @@
 + (void) printUser;
 + (MFHUser *) getCurrentUser;
 + (void) saveResponse:(RKMappingResult *) result;
-
++ (ALSResponse *) getALSResponse;
++ (NSMutableArray *) getAdverts;
++ (void) setAdverts;
 @end

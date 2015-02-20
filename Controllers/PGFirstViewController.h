@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MFHSession.h"
 
 @interface PGFirstViewController : UICollectionViewController
-
 @end
