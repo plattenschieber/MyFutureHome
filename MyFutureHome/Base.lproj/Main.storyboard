@@ -519,12 +519,6 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24e-5m-VUK">
-                                            <rect key="frame" x="29" y="0.0" width="72" height="44"/>
-                                            <state key="normal" title="Button">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -532,8 +526,8 @@
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="customSize" width="140" height="80"/>
                                 <connections>
-                                    <outlet property="advertButton" destination="24e-5m-VUK" id="6uU-bd-GOo"/>
                                     <outlet property="advertLabel" destination="ukJ-X4-xz6" id="Yvo-de-JdB"/>
+                                    <outlet property="advertPicture" destination="Eem-Ip-zSm" id="dIB-kT-IB9"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

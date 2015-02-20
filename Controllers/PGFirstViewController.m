@@ -93,11 +93,12 @@
     MFHAdvertCell *cell = [view
                                   dequeueReusableCellWithReuseIdentifier:@"ProductCell"
                                   forIndexPath:indexPath];
-//    NSLog(@"No.Adverts: %i", [MFHSession getAdverts].count);
     if ([MFHSession getAdverts].count > 0)
     {
         MFHAdvert *advert = [[MFHSession getAdverts] objectAtIndex:indexPath.section];
-        [cell.advertButton setTitle:advert.desc forState:UIControlStateNormal];
+        [cell.advertLabel setText:advert.name];
+        NSURL *test = [NSURL URLWithString:advert.imageUrl];
+        [cell.advertPicture setImageWithURL:test];
         
     }
     
