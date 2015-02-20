@@ -8,6 +8,7 @@
 
 #import "MFHSession.h"
 #import "MFHDataHandler.h"
+#import "ALSResponse.h"
 #import "MFHUserSearchProfile.h"
 
 @implementation MFHSession
@@ -17,6 +18,7 @@ static MFHDataHandler *dataHandler;
 static MFHUserSearchProfile *profile;
 static ALSResponse *alsresponse;
 static int count = 0;
+static NSMutableArray *adverts;
 
 + (void) start
 {
@@ -24,7 +26,6 @@ static int count = 0;
     user.phoneId = [NSString stringWithFormat:@"%@%i", @"SUPERMEGAGEILESTOKEN", arc4random()];
     dataHandler = [[MFHDataHandler alloc] init];
     [dataHandler registerUser:user];
-    
 }
 
 + (void) printUser
@@ -48,6 +49,11 @@ static int count = 0;
     alsresponse = result.firstObject;
 }
 
++ (ALSResponse *) getALSResponse
+{
+    return alsresponse;
+}
+
 + (void) getCatalogue
 {
     [dataHandler getCatalogueOfUser:user withSearchProfile:profile];
@@ -56,5 +62,14 @@ static int count = 0;
 + (MFHUser *) getCurrentUser
 {
     return user;
+}
+
++ (NSMutableArray *) getAdverts
+{
+    return adverts;
+}
++(void) setAdverts
+{
+    adverts = [[NSMutableArray alloc] init];
 }
 @end

@@ -10,6 +10,15 @@
 #import "MMDrawerBarButtonItem.h"
 #import "UIViewController+MMDrawerController.h"
 
+#import "MFHSession.h"
+#import "ALSPage.h"
+#import "ALSPageContent.h"
+#import "ALSDocumentElement.h"
+#import "PGSideDrawerController.h"
+#import "MFHAdvertCell.h"
+#import "MFHSession.h"
+
+
 @interface PGFirstViewController ()
 
 @end
@@ -19,6 +28,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupLeftMenuButton];
+    
+//    [self createProduct ];
+    
+}
+
+-(void) createProduct
+{
+    //Get first pageContent and draw uiControls
+    ALSPage *page =   [[[MFHSession getALSResponse] pages ]objectAtIndex:0];
+    if ([MFHSession getAdverts])
+        [[MFHSession getAdverts] removeAllObjects];
+    else
+        [MFHSession setAdverts];
+    
+    // watch out for all
+    for (ALSPageContent *content in [page contents])
+    {
+        MFHAdvert *advert = [[MFHAdvert alloc ]init];
+        advert.posX = content.position.x;
+        advert.posY = content.position.y;
+        advert.width = content.position.width;
+        advert.height = content.position.height;
+        
+        for (ALSDocumentElement* element in content.documentElements)
+        {
+            if([[element elementType] isEqualToString:@"headline"])
+            {
+                if ([[element elementClass] isEqualToString:@"headline"])
+                    advert.name = element.text;
+                if ([[element elementClass] isEqualToString:@"subheadline"])
+                    advert.desc = element.text;
+            }
+        }
+        // add advert to our array
+        [[MFHSession getAdverts] addObject:advert];
+    }
+    NSLog(@"No.Adverts: %i", [MFHSession getAdverts].count);
 }
 
 - (void)setupLeftMenuButton {
@@ -28,6 +74,34 @@
 
 - (void)leftDrawerButtonPress:(id)leftDrawerButtonPress {
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *) view
+{
+    return [MFHSession getAdverts].count;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)view
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    MFHAdvertCell *cell = [view
+                                  dequeueReusableCellWithReuseIdentifier:@"ProductCell"
+                                  forIndexPath:indexPath];
+//    NSLog(@"No.Adverts: %i", [MFHSession getAdverts].count);
+    if ([MFHSession getAdverts].count > 0)
+    {
+        MFHAdvert *advert = [[MFHSession getAdverts] objectAtIndex:indexPath.section];
+        [cell.advertButton setTitle:advert.desc forState:UIControlStateNormal];
+        
+    }
+    
+    return cell;
 }
 
 /*
