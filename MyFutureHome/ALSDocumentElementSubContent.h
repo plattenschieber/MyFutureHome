@@ -10,4 +10,11 @@
 
 @interface ALSDocumentElementSubContent : NSObject
 
+@property NSString *elementClass;
+@property NSString *elementType;
+@property NSString *text;
+@property NSString *style;
+@property NSString *url;
+
+
 @end

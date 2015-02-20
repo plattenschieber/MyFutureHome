@@ -7,14 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ALSPageContentPosition.h"
 
 @interface ALSPageContent : NSObject
 
 @property NSString *contentType;
-@property NSString *posX;
-@property NSString *posY;
-@property NSString *height;
-@property NSString *width;
-@property NSArray* documentElements;
+@property NSArray *documentElements;
+@property ALSPageContentPosition *position;
 
 @end

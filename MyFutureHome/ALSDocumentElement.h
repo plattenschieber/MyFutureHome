@@ -10,5 +10,11 @@
 
 @interface ALSDocumentElement : NSObject
 
+@property NSString *text;
+@property NSString *elementClass;
+@property NSString *elementType;
+@property int level;
+@property NSArray *contents;
+
 
 @end
