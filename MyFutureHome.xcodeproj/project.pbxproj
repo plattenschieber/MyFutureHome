@@ -20,7 +20,6 @@
 		3A3ED0901A967AD4005FC161 /* ALSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED08F1A967AD4005FC161 /* ALSResponse.m */; };
 		3A3ED0931A967B16005FC161 /* ALSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED0921A967B16005FC161 /* ALSPage.m */; };
 		3A3ED0961A968B0D005FC161 /* ALSPageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED0951A968B0D005FC161 /* ALSPageContent.m */; };
-		3A7369FE1A950F0900392EA0 /* MFHJSONResponse.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */; };
 		3A736A021A950FA400392EA0 /* MFHJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A736A011A950FA400392EA0 /* MFHJSONResponse.m */; };
 		3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */; };
 		3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A892A4E1A5C48E000370BC8 /* FBLogin.m */; };
@@ -425,7 +424,6 @@
 				3A736A021A950FA400392EA0 /* MFHJSONResponse.m in Sources */,
 				3AF47E6C1A96BA3500D11B7C /* ALSDocumentElementContent.m in Sources */,
 				3A3ED0931A967B16005FC161 /* ALSPage.m in Sources */,
-				3A7369FE1A950F0900392EA0 /* MFHJSONResponse.h in Sources */,
 				3AC3AAA71A76C51600BBB294 /* PGSideDrawerController.m in Sources */,
 				3AF47E721A96C7B500D11B7C /* MFHNavigationController.m in Sources */,
 				3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */,
