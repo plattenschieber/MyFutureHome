@@ -14,6 +14,8 @@
 #import "ALSPage.h"
 #import "ALSPageContent.h"
 #import "ALSDocumentElement.h"
+#import "ALSDocumentElementContent.h"
+#import "ALSDocumentElementSubContent.h"
 #import "PGSideDrawerController.h"
 #import "MFHAdvertCell.h"
 #import "MFHSession.h"
@@ -56,9 +58,19 @@
             if([[element elementType] isEqualToString:@"headline"])
             {
                 if ([[element elementClass] isEqualToString:@"headline"])
-                    advert.name = element.text;
+                    advert.name = [element.text stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
                 if ([[element elementClass] isEqualToString:@"subheadline"])
                     advert.desc = element.text;
+            }
+            if([[element elementClass] isEqualToString:@"image"])
+            {
+                for (ALSDocumentElementContent* contentElement in element.contents)
+                {
+                    if([[contentElement url] isEqualToString:@"link"])
+                    {
+                        advert.imageUrl = [contentElement.url stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+                    }
+                }
             }
         }
         // add advert to our array
