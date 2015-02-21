@@ -110,12 +110,12 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *) view
 {
-    return [MFHSession getAdverts].count;
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section
 {
-    return 1;
+    return [MFHSession getAdverts].count;
 }
 
 
@@ -127,7 +127,7 @@
                                   forIndexPath:indexPath];
     if ([MFHSession getAdverts].count > 0)
     {
-        MFHAdvert *advert = [[MFHSession getAdverts] objectAtIndex:indexPath.section];
+        MFHAdvert *advert = [[MFHSession getAdverts] objectAtIndex:indexPath.row];
         [cell.advertLabel setText:advert.name];
         NSURL *test = [NSURL URLWithString:advert.imageUrl];
         [cell.advertPicture setImageWithURL:test];
