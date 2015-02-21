@@ -23,6 +23,7 @@
 		3A7B09F11A98FB8D005F5C7F /* MFHManagaProfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B09F01A98FB8D005F5C7F /* MFHManagaProfilesViewController.m */; };
 		3A7B09F41A98FBBC005F5C7F /* MFHLastWatchedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B09F31A98FBBC005F5C7F /* MFHLastWatchedViewController.m */; };
 		3A7B09F71A98FBCC005F5C7F /* MFHFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B09F61A98FBCC005F5C7F /* MFHFavouritesViewController.m */; };
+		3A7B09FA1A992056005F5C7F /* MFHAdvertFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B09F91A992056005F5C7F /* MFHAdvertFlowLayout.m */; };
 		3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */; };
 		3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A892A4E1A5C48E000370BC8 /* FBLogin.m */; };
 		3AC3AAA51A76C51600BBB294 /* MFHCatalogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AA9E1A76C51600BBB294 /* MFHCatalogueViewController.m */; };
@@ -84,6 +85,8 @@
 		3A7B09F31A98FBBC005F5C7F /* MFHLastWatchedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHLastWatchedViewController.m; sourceTree = "<group>"; };
 		3A7B09F51A98FBCC005F5C7F /* MFHFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHFavouritesViewController.h; sourceTree = "<group>"; };
 		3A7B09F61A98FBCC005F5C7F /* MFHFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHFavouritesViewController.m; sourceTree = "<group>"; };
+		3A7B09F81A992056005F5C7F /* MFHAdvertFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHAdvertFlowLayout.h; sourceTree = "<group>"; };
+		3A7B09F91A992056005F5C7F /* MFHAdvertFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHAdvertFlowLayout.m; sourceTree = "<group>"; };
 		3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponse.h; sourceTree = "<group>"; };
 		3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		3A892A4D1A5C48E000370BC8 /* FBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLogin.h; path = ../FBLogin.h; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 		3A7B09EC1A98F86A005F5C7F /* Catalogue */ = {
 			isa = PBXGroup;
 			children = (
+				3A7B09F81A992056005F5C7F /* MFHAdvertFlowLayout.h */,
+				3A7B09F91A992056005F5C7F /* MFHAdvertFlowLayout.m */,
 				3A7B09F21A98FBBC005F5C7F /* MFHLastWatchedViewController.h */,
 				3A7B09F31A98FBBC005F5C7F /* MFHLastWatchedViewController.m */,
 				3A7B09F51A98FBCC005F5C7F /* MFHFavouritesViewController.h */,
@@ -463,6 +468,7 @@
 				3A7B09F11A98FB8D005F5C7F /* MFHManagaProfilesViewController.m in Sources */,
 				3A7B09EB1A98F7C6005F5C7F /* MFHCreateProfileViewController.m in Sources */,
 				3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */,
+				3A7B09FA1A992056005F5C7F /* MFHAdvertFlowLayout.m in Sources */,
 				3AF47E691A96B4D300D11B7C /* ALSDocumentElement.m in Sources */,
 				3AE5B9FF1A949E3B003863DC /* MFHUserSearchProfile.m in Sources */,
 				3AF47E651A96AC2700D11B7C /* ALSPageContentPosition.m in Sources */,
