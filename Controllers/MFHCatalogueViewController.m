@@ -48,7 +48,7 @@ static NSString *ItemIdentifier = @"ProductCell";
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     self.collectionView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
-
+    self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
 -(void) createCatalogue
