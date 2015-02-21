@@ -19,11 +19,16 @@
 #import "PGSideDrawerController.h"
 #import "MFHAdvertCell.h"
 #import "MFHSession.h"
+#import "MFHAdvertFlowLayout.h"
 
 
 @interface MFHCatalogueViewController ()
 
+@property (nonatomic, strong) MFHAdvertFlowLayout *mfhlayout;
+
 @end
+
+static NSString *ItemIdentifier = @"ProductCell";
 
 @implementation MFHCatalogueViewController
 
@@ -123,7 +128,7 @@
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     MFHAdvertCell *cell = [view
-                                  dequeueReusableCellWithReuseIdentifier:@"ProductCell"
+                                  dequeueReusableCellWithReuseIdentifier:ItemIdentifier
                                   forIndexPath:indexPath];
     if ([MFHSession getAdverts].count > 0)
     {
@@ -136,6 +141,7 @@
     
     return cell;
 }
+
 
 /*
 #pragma mark - Navigation
