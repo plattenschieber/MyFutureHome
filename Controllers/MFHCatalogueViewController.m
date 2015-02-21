@@ -35,7 +35,17 @@
     
 }
 
+- (void) loadView
 {
+    self.mfhlayout = [[MFHAdvertFlowLayout alloc] init];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.mfhlayout];
+    [self.collectionView registerClass:[MFHAdvertCell class] forCellWithReuseIdentifier:ItemIdentifier];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    self.collectionView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
+
+}
+
 -(void) createCatalogue
 {
     
