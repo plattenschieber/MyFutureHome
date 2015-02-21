@@ -35,8 +35,10 @@
     
 }
 
--(void) createProduct
 {
+-(void) createCatalogue
+{
+    
     //Get first pageContent and draw uiControls
     ALSPage *page =   [[[MFHSession getALSResponse] pages ]objectAtIndex:0];
     if ([MFHSession getAdverts])
@@ -44,16 +46,26 @@
     else
         [MFHSession setAdverts];
     
-    // watch out for all
-    for (ALSPageContent *content in [page contents])
+    for (ALSPageContent *product in [page contents])
     {
+        [self createProduct: product];
+    }
+    
+    NSLog(@"No.Adverts: %i", [MFHSession getAdverts].count);
+}
+
+-(void) createProduct: (ALSPageContent*) content
+{
+    // watch out for all
+    
         MFHAdvert *advert = [[MFHAdvert alloc ]init];
         advert.posX = content.position.x;
         advert.posY = content.position.y;
         advert.width = content.position.width;
         advert.height = content.position.height;
-        
-        for (ALSDocumentElement* element in content.documentElements)
+    
+    
+        for (ALSDocumentElement* element in [content documentElements])
         {
             if([[element elementType] isEqualToString:@"headline"])
             {
@@ -75,8 +87,6 @@
         }
         // add advert to our array
         [[MFHSession getAdverts] addObject:advert];
-    }
-    NSLog(@"No.Adverts: %i", [MFHSession getAdverts].count);
 }
 
 - (void)setupLeftMenuButton {
