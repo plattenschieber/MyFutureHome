@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MFHAdvertCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UILabel *advertLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *advertPicture;
+@property (strong, nonatomic) IBOutlet UILabel *advertLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *advertPicture;
 - (id)initWithFrame:(CGRect)frame;
 
 @end

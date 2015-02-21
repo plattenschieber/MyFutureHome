@@ -133,9 +133,11 @@ static NSString *ItemIdentifier = @"ProductCell";
     if ([MFHSession getAdverts].count > 0)
     {
         MFHAdvert *advert = [[MFHSession getAdverts] objectAtIndex:indexPath.row];
+        cell.advertLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, advert.width, 15.0)];
         [cell.advertLabel setText:advert.name];
         NSURL *test = [NSURL URLWithString:advert.imageUrl];
         [cell.advertPicture setImageWithURL:test];
+        [cell.contentView addSubview:cell.advertLabel];
         
     }
     
