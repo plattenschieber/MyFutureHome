@@ -11,5 +11,6 @@
 @interface MFHAdvertCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *advertLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *advertPicture;
+- (id)initWithFrame:(CGRect)frame;
 
 @end
