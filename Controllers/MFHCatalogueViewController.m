@@ -31,7 +31,7 @@
     [super viewDidLoad];
     [self setupLeftMenuButton];
     
-//    [self createProduct ];
+    if([MFHSession isDataThere])[self createCatalogue];
     
 }
 
