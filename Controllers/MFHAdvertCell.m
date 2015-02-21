@@ -14,7 +14,7 @@
 {
     if (!(self = [super initWithFrame:frame])) return nil;
     
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor cyanColor];
     
     return self;
 }
