@@ -11,12 +11,10 @@
 		3A29C3F91A43479500A99F8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C3F81A43479500A99F8F /* main.m */; };
 		3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C3FB1A43479500A99F8F /* AppDelegate.m */; };
 		3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C3FD1A43479500A99F8F /* MyFutureHome.xcdatamodeld */; };
-		3A29C4021A43479500A99F8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4011A43479500A99F8F /* ViewController.m */; };
 		3A29C4051A43479500A99F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4031A43479500A99F8F /* Main.storyboard */; };
 		3A29C4071A43479500A99F8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4061A43479500A99F8F /* Images.xcassets */; };
 		3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4081A43479500A99F8F /* LaunchScreen.xib */; };
 		3A29C4161A43479500A99F8F /* MyFutureHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */; };
-		3A29C4221A43583D00A99F8F /* gitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A29C4211A43583D00A99F8F /* gitter.png */; };
 		3A3ED0901A967AD4005FC161 /* ALSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED08F1A967AD4005FC161 /* ALSResponse.m */; };
 		3A3ED0931A967B16005FC161 /* ALSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED0921A967B16005FC161 /* ALSPage.m */; };
 		3A3ED0961A968B0D005FC161 /* ALSPageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED0951A968B0D005FC161 /* ALSPageContent.m */; };
@@ -65,15 +63,12 @@
 		3A29C3FA1A43479500A99F8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A29C3FB1A43479500A99F8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3A29C3FE1A43479500A99F8F /* MyFutureHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFutureHome.xcdatamodel; sourceTree = "<group>"; };
-		3A29C4001A43479500A99F8F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3A29C4011A43479500A99F8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A29C4041A43479500A99F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A29C4061A43479500A99F8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3A29C4091A43479500A99F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3A29C40F1A43479500A99F8F /* MyFutureHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFutureHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A29C4141A43479500A99F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A29C4151A43479500A99F8F /* MyFutureHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFutureHomeTests.m; sourceTree = "<group>"; };
-		3A29C4211A43583D00A99F8F /* gitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitter.png; sourceTree = "<group>"; };
 		3A3ED08E1A967AD4005FC161 /* ALSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSResponse.h; sourceTree = "<group>"; };
 		3A3ED08F1A967AD4005FC161 /* ALSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSResponse.m; sourceTree = "<group>"; };
 		3A3ED0911A967B16005FC161 /* ALSPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSPage.h; sourceTree = "<group>"; };
@@ -89,7 +84,6 @@
 		3A7B09F31A98FBBC005F5C7F /* MFHLastWatchedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHLastWatchedViewController.m; sourceTree = "<group>"; };
 		3A7B09F51A98FBCC005F5C7F /* MFHFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHFavouritesViewController.h; sourceTree = "<group>"; };
 		3A7B09F61A98FBCC005F5C7F /* MFHFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHFavouritesViewController.m; sourceTree = "<group>"; };
-		3A87EB0D1A822F7600E00F90 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponse.h; sourceTree = "<group>"; };
 		3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		3A892A4D1A5C48E000370BC8 /* FBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLogin.h; path = ../FBLogin.h; sourceTree = "<group>"; };
@@ -151,7 +145,6 @@
 		3A29C3EA1A43479500A99F8F = {
 			isa = PBXGroup;
 			children = (
-				3A87EB0D1A822F7600E00F90 /* Test.h */,
 				3A892A461A5C3DDE00370BC8 /* Frameworks */,
 				3A29C3F51A43479500A99F8F /* MyFutureHome */,
 				3A29C4121A43479500A99F8F /* MyFutureHomeTests */,
@@ -179,13 +172,10 @@
 				3A892A4E1A5C48E000370BC8 /* FBLogin.m */,
 				3A29C3FA1A43479500A99F8F /* AppDelegate.h */,
 				3A29C3FB1A43479500A99F8F /* AppDelegate.m */,
-				3A29C4001A43479500A99F8F /* ViewController.h */,
-				3A29C4011A43479500A99F8F /* ViewController.m */,
 				3A29C4031A43479500A99F8F /* Main.storyboard */,
 				3A29C4061A43479500A99F8F /* Images.xcassets */,
 				3A29C4081A43479500A99F8F /* LaunchScreen.xib */,
 				3A29C3FD1A43479500A99F8F /* MyFutureHome.xcdatamodeld */,
-				3A29C4211A43583D00A99F8F /* gitter.png */,
 				3A29C3F61A43479500A99F8F /* Supporting Files */,
 			);
 			path = MyFutureHome;
@@ -414,7 +404,6 @@
 				3A29C4051A43479500A99F8F /* Main.storyboard in Resources */,
 				3A29C40A1A43479500A99F8F /* LaunchScreen.xib in Resources */,
 				3A29C4071A43479500A99F8F /* Images.xcassets in Resources */,
-				3A29C4221A43583D00A99F8F /* gitter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +476,6 @@
 				3AC3AAA81A76C51600BBB294 /* PGViewController.m in Sources */,
 				3AC3AAA61A76C51600BBB294 /* MFHProfileViewController.m in Sources */,
 				3A2977431A95331500D75A4F /* MFHSession.m in Sources */,
-				3A29C4021A43479500A99F8F /* ViewController.m in Sources */,
 				3AF47E6F1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m in Sources */,
 				3AF47E751A9706C900D11B7C /* MFHAdvertCell.m in Sources */,
 				3A29C3FF1A43479500A99F8F /* MyFutureHome.xcdatamodeld in Sources */,
