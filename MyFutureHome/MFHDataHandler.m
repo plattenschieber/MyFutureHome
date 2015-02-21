@@ -124,10 +124,12 @@
     
     [self.objectManager addResponseDescriptor:responseDesc];
     
+    NSString *width = [NSString stringWithFormat:@"%.0f",[UIScreen mainScreen].bounds.size.width];
+    NSString *height = [NSString stringWithFormat:@"%.0f",[UIScreen mainScreen].bounds.size.height];
     NSDictionary *queryParams = @{@"phoneId" : user.phoneId,
                                   @"accessToken" : user.accessToken,
-                                  @"width" : @"100",
-                                  @"height" : @"250",
+                                  @"width" : width,
+                                  @"height" : height,
                                   @"searchProfileId" : [searchProfile searchProfileId]};
     
     [self.objectManager getObjectsAtPath:@"/call"
