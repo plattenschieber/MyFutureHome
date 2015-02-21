@@ -190,9 +190,6 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
-                    <connections>
-                        <outlet property="triggerButton" destination="s4w-jE-43v" id="YIz-PV-5NY"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOH-hP-f3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

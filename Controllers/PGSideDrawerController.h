@@ -10,7 +10,6 @@
 #import "MFHCatalogueViewController.h"
 
 @interface PGSideDrawerController : UITableViewController
-@property (weak, nonatomic) IBOutlet UIButton *triggerButton;
 
 @property MFHCatalogueViewController *firstViewController;
 

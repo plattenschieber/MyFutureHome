@@ -23,13 +23,6 @@
     self.currentIndex = 0;
 }
 
-// call the createProduct 
-- (IBAction)ActionButton:(id)sender {
-    NSLog(@"A1");
-    [[self triggerButton] addTarget:self.firstViewController
-                   action:@selector(createProduct)
-         forControlEvents:UIControlEventTouchUpInside];
-}
 
 #pragma mark - Table View Delegate
 
