@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PGFirstViewController.h"
+#import "MFHCatalogueViewController.h"
 
 @interface PGSideDrawerController : UITableViewController
 @property (weak, nonatomic) IBOutlet UIButton *triggerButton;
 
-@property PGFirstViewController *firstViewController;
+@property MFHCatalogueViewController *firstViewController;
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PGSecondViewController : UIViewController
+@interface MFHProfileViewController : UIViewController
 
 @end

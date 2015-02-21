@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.firstViewController = [[PGFirstViewController alloc] init];
+    self.firstViewController = [[MFHCatalogueViewController alloc] init];
     self.currentIndex = 0;
 }
 

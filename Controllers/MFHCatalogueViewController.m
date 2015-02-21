@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Pulkit Goyal. All rights reserved.
 //
 
-#import "PGFirstViewController.h"
+#import "MFHCatalogueViewController.h"
 #import "MMDrawerBarButtonItem.h"
 #import "UIViewController+MMDrawerController.h"
 
@@ -21,11 +21,11 @@
 #import "MFHSession.h"
 
 
-@interface PGFirstViewController ()
+@interface MFHCatalogueViewController ()
 
 @end
 
-@implementation PGFirstViewController
+@implementation MFHCatalogueViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -217,8 +217,7 @@
         <!--Second View Controller-->
         <scene sceneID="QVn-zN-heo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aeE-sJ-DDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="VoH-On-vnc" customClass="PGSecondViewController" sceneMemberID="viewController">
+                <viewController id="VoH-On-vnc" customClass="MFHProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zvd-E9-Ylg"/>
                         <viewControllerLayoutGuide type="bottom" id="KFl-X1-dLK"/>
@@ -231,13 +230,14 @@
                     <navigationItem key="navigationItem" title="Second View Controller" id="7ld-DH-AmX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeE-sJ-DDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="382" y="-21"/>
         </scene>
-        <!--First View Controller-->
+        <!--Catalogue View Controller-->
         <scene sceneID="WyL-7H-IpD">
             <objects>
-                <collectionViewController id="tDt-ns-iCB" customClass="PGFirstViewController" sceneMemberID="viewController">
+                <collectionViewController id="tDt-ns-iCB" customClass="MFHCatalogueViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Mo5-1u-V8Z">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

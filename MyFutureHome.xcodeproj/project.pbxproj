@@ -21,10 +21,14 @@
 		3A3ED0931A967B16005FC161 /* ALSPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED0921A967B16005FC161 /* ALSPage.m */; };
 		3A3ED0961A968B0D005FC161 /* ALSPageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3ED0951A968B0D005FC161 /* ALSPageContent.m */; };
 		3A736A021A950FA400392EA0 /* MFHJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A736A011A950FA400392EA0 /* MFHJSONResponse.m */; };
+		3A7B09EB1A98F7C6005F5C7F /* MFHCreateProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B09EA1A98F7C6005F5C7F /* MFHCreateProfileViewController.m */; };
+		3A7B09F11A98FB8D005F5C7F /* MFHManagaProfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B09F01A98FB8D005F5C7F /* MFHManagaProfilesViewController.m */; };
+		3A7B09F41A98FBBC005F5C7F /* MFHLastWatchedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B09F31A98FBBC005F5C7F /* MFHLastWatchedViewController.m */; };
+		3A7B09F71A98FBCC005F5C7F /* MFHFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B09F61A98FBCC005F5C7F /* MFHFavouritesViewController.m */; };
 		3A892A451A5C3DB300370BC8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */; };
 		3A892A4F1A5C48E000370BC8 /* FBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A892A4E1A5C48E000370BC8 /* FBLogin.m */; };
-		3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AA9E1A76C51600BBB294 /* PGFirstViewController.m */; };
-		3AC3AAA61A76C51600BBB294 /* PGSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AAA01A76C51600BBB294 /* PGSecondViewController.m */; };
+		3AC3AAA51A76C51600BBB294 /* MFHCatalogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AA9E1A76C51600BBB294 /* MFHCatalogueViewController.m */; };
+		3AC3AAA61A76C51600BBB294 /* MFHProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AAA01A76C51600BBB294 /* MFHProfileViewController.m */; };
 		3AC3AAA71A76C51600BBB294 /* PGSideDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AAA21A76C51600BBB294 /* PGSideDrawerController.m */; };
 		3AC3AAA81A76C51600BBB294 /* PGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3AAA41A76C51600BBB294 /* PGViewController.m */; };
 		3AE5B9F81A9496BB003863DC /* MFHDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5B9F71A9496BB003863DC /* MFHDataHandler.m */; };
@@ -77,15 +81,23 @@
 		3A3ED0941A968B0D005FC161 /* ALSPageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSPageContent.h; sourceTree = "<group>"; };
 		3A3ED0951A968B0D005FC161 /* ALSPageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSPageContent.m; sourceTree = "<group>"; };
 		3A736A011A950FA400392EA0 /* MFHJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHJSONResponse.m; sourceTree = "<group>"; };
+		3A7B09E91A98F7C6005F5C7F /* MFHCreateProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHCreateProfileViewController.h; sourceTree = "<group>"; };
+		3A7B09EA1A98F7C6005F5C7F /* MFHCreateProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHCreateProfileViewController.m; sourceTree = "<group>"; };
+		3A7B09EF1A98FB8D005F5C7F /* MFHManagaProfilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHManagaProfilesViewController.h; sourceTree = "<group>"; };
+		3A7B09F01A98FB8D005F5C7F /* MFHManagaProfilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHManagaProfilesViewController.m; sourceTree = "<group>"; };
+		3A7B09F21A98FBBC005F5C7F /* MFHLastWatchedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHLastWatchedViewController.h; sourceTree = "<group>"; };
+		3A7B09F31A98FBBC005F5C7F /* MFHLastWatchedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHLastWatchedViewController.m; sourceTree = "<group>"; };
+		3A7B09F51A98FBCC005F5C7F /* MFHFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHFavouritesViewController.h; sourceTree = "<group>"; };
+		3A7B09F61A98FBCC005F5C7F /* MFHFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHFavouritesViewController.m; sourceTree = "<group>"; };
 		3A87EB0D1A822F7600E00F90 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		3A87EB1F1A82315600E00F90 /* MFHJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHJSONResponse.h; sourceTree = "<group>"; };
 		3A892A441A5C3DB300370BC8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		3A892A4D1A5C48E000370BC8 /* FBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLogin.h; path = ../FBLogin.h; sourceTree = "<group>"; };
 		3A892A4E1A5C48E000370BC8 /* FBLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLogin.m; path = ../FBLogin.m; sourceTree = "<group>"; };
-		3AC3AA9D1A76C51600BBB294 /* PGFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGFirstViewController.h; sourceTree = "<group>"; };
-		3AC3AA9E1A76C51600BBB294 /* PGFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGFirstViewController.m; sourceTree = "<group>"; };
-		3AC3AA9F1A76C51600BBB294 /* PGSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGSecondViewController.h; sourceTree = "<group>"; };
-		3AC3AAA01A76C51600BBB294 /* PGSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGSecondViewController.m; sourceTree = "<group>"; };
+		3AC3AA9D1A76C51600BBB294 /* MFHCatalogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHCatalogueViewController.h; sourceTree = "<group>"; };
+		3AC3AA9E1A76C51600BBB294 /* MFHCatalogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHCatalogueViewController.m; sourceTree = "<group>"; };
+		3AC3AA9F1A76C51600BBB294 /* MFHProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHProfileViewController.h; sourceTree = "<group>"; };
+		3AC3AAA01A76C51600BBB294 /* MFHProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHProfileViewController.m; sourceTree = "<group>"; };
 		3AC3AAA11A76C51600BBB294 /* PGSideDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGSideDrawerController.h; sourceTree = "<group>"; };
 		3AC3AAA21A76C51600BBB294 /* PGSideDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGSideDrawerController.m; sourceTree = "<group>"; };
 		3AC3AAA31A76C51600BBB294 /* PGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGViewController.h; sourceTree = "<group>"; };
@@ -205,6 +217,47 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3A7B09EC1A98F86A005F5C7F /* Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				3A7B09F21A98FBBC005F5C7F /* MFHLastWatchedViewController.h */,
+				3A7B09F31A98FBBC005F5C7F /* MFHLastWatchedViewController.m */,
+				3A7B09F51A98FBCC005F5C7F /* MFHFavouritesViewController.h */,
+				3A7B09F61A98FBCC005F5C7F /* MFHFavouritesViewController.m */,
+				3AF47E731A9706C900D11B7C /* MFHAdvertCell.h */,
+				3AF47E741A9706C900D11B7C /* MFHAdvertCell.m */,
+				3AC3AA9D1A76C51600BBB294 /* MFHCatalogueViewController.h */,
+				3AC3AA9E1A76C51600BBB294 /* MFHCatalogueViewController.m */,
+			);
+			name = Catalogue;
+			sourceTree = "<group>";
+		};
+		3A7B09ED1A98F950005F5C7F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3A7B09EF1A98FB8D005F5C7F /* MFHManagaProfilesViewController.h */,
+				3A7B09F01A98FB8D005F5C7F /* MFHManagaProfilesViewController.m */,
+				3AC3AA9F1A76C51600BBB294 /* MFHProfileViewController.h */,
+				3AC3AAA01A76C51600BBB294 /* MFHProfileViewController.m */,
+				3A7B09E91A98F7C6005F5C7F /* MFHCreateProfileViewController.h */,
+				3A7B09EA1A98F7C6005F5C7F /* MFHCreateProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		3A7B09EE1A98FAA0005F5C7F /* Burger */ = {
+			isa = PBXGroup;
+			children = (
+				3AF47E701A96C7B500D11B7C /* MFHNavigationController.h */,
+				3AF47E711A96C7B500D11B7C /* MFHNavigationController.m */,
+				3AC3AAA11A76C51600BBB294 /* PGSideDrawerController.h */,
+				3AC3AAA21A76C51600BBB294 /* PGSideDrawerController.m */,
+				3AC3AAA31A76C51600BBB294 /* PGViewController.h */,
+				3AC3AAA41A76C51600BBB294 /* PGViewController.m */,
+			);
+			name = Burger;
+			sourceTree = "<group>";
+		};
 		3A892A461A5C3DDE00370BC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,18 +270,9 @@
 		3AC3AA9C1A76C51600BBB294 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3AF47E731A9706C900D11B7C /* MFHAdvertCell.h */,
-				3AF47E741A9706C900D11B7C /* MFHAdvertCell.m */,
-				3AF47E701A96C7B500D11B7C /* MFHNavigationController.h */,
-				3AF47E711A96C7B500D11B7C /* MFHNavigationController.m */,
-				3AC3AA9D1A76C51600BBB294 /* PGFirstViewController.h */,
-				3AC3AA9E1A76C51600BBB294 /* PGFirstViewController.m */,
-				3AC3AA9F1A76C51600BBB294 /* PGSecondViewController.h */,
-				3AC3AAA01A76C51600BBB294 /* PGSecondViewController.m */,
-				3AC3AAA11A76C51600BBB294 /* PGSideDrawerController.h */,
-				3AC3AAA21A76C51600BBB294 /* PGSideDrawerController.m */,
-				3AC3AAA31A76C51600BBB294 /* PGViewController.h */,
-				3AC3AAA41A76C51600BBB294 /* PGViewController.m */,
+				3A7B09EE1A98FAA0005F5C7F /* Burger */,
+				3A7B09ED1A98F950005F5C7F /* Profile */,
+				3A7B09EC1A98F86A005F5C7F /* Catalogue */,
 			);
 			name = Controllers;
 			path = ../Controllers;
@@ -426,18 +470,22 @@
 				3A3ED0931A967B16005FC161 /* ALSPage.m in Sources */,
 				3AC3AAA71A76C51600BBB294 /* PGSideDrawerController.m in Sources */,
 				3AF47E721A96C7B500D11B7C /* MFHNavigationController.m in Sources */,
-				3AC3AAA51A76C51600BBB294 /* PGFirstViewController.m in Sources */,
+				3AC3AAA51A76C51600BBB294 /* MFHCatalogueViewController.m in Sources */,
+				3A7B09F11A98FB8D005F5C7F /* MFHManagaProfilesViewController.m in Sources */,
+				3A7B09EB1A98F7C6005F5C7F /* MFHCreateProfileViewController.m in Sources */,
 				3A29C3FC1A43479500A99F8F /* AppDelegate.m in Sources */,
 				3AF47E691A96B4D300D11B7C /* ALSDocumentElement.m in Sources */,
 				3AE5B9FF1A949E3B003863DC /* MFHUserSearchProfile.m in Sources */,
 				3AF47E651A96AC2700D11B7C /* ALSPageContentPosition.m in Sources */,
 				3AE5BA051A94A1B7003863DC /* MFHAdvert.m in Sources */,
+				3A7B09F71A98FBCC005F5C7F /* MFHFavouritesViewController.m in Sources */,
 				3AE5B9FB1A94978E003863DC /* MFHUser.m in Sources */,
 				3AE5BA021A94A0B5003863DC /* MFHUserSettings.m in Sources */,
+				3A7B09F41A98FBBC005F5C7F /* MFHLastWatchedViewController.m in Sources */,
 				3A3ED0961A968B0D005FC161 /* ALSPageContent.m in Sources */,
 				3A29C3F91A43479500A99F8F /* main.m in Sources */,
 				3AC3AAA81A76C51600BBB294 /* PGViewController.m in Sources */,
-				3AC3AAA61A76C51600BBB294 /* PGSecondViewController.m in Sources */,
+				3AC3AAA61A76C51600BBB294 /* MFHProfileViewController.m in Sources */,
 				3A2977431A95331500D75A4F /* MFHSession.m in Sources */,
 				3A29C4021A43479500A99F8F /* ViewController.m in Sources */,
 				3AF47E6F1A96BA4A00D11B7C /* ALSDocumentElementSubContent.m in Sources */,

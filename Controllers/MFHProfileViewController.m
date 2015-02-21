@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Pulkit Goyal. All rights reserved.
 //
 
-#import "PGSecondViewController.h"
+#import "MFHProfileViewController.h"
 #import "MMDrawerBarButtonItem.h"
 #import "MMDrawerController.h"
 #import "UIViewController+MMDrawerController.h"
 
-@interface PGSecondViewController ()
+@interface MFHProfileViewController ()
 
 @end
 
-@implementation PGSecondViewController
+@implementation MFHProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
