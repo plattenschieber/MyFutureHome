@@ -20,4 +20,5 @@
 + (ALSResponse *) getALSResponse;
 + (NSMutableArray *) getAdverts;
 + (void) setAdverts;
++ (BOOL) isDataThere;
 @end

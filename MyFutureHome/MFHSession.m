@@ -19,6 +19,7 @@ static MFHUserSearchProfile *profile;
 static ALSResponse *alsresponse;
 static int count = 0;
 static NSMutableArray *adverts;
+static BOOL isDataThere;
 
 + (void) start
 {
@@ -47,6 +48,7 @@ static NSMutableArray *adverts;
 {
     // DO IT RIGHT HERE
     alsresponse = result.firstObject;
+    isDataThere = YES;
 }
 
 + (ALSResponse *) getALSResponse
@@ -71,5 +73,9 @@ static NSMutableArray *adverts;
 +(void) setAdverts
 {
     adverts = [[NSMutableArray alloc] init];
+}
++(BOOL) isDataThere
+{
+    return isDataThere;
 }
 @end

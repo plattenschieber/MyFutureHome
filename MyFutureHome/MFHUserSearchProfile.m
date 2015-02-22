@@ -20,7 +20,7 @@
     self.favoredArea = @"NRW";
     self.favoredCity = @"Köln Innenstadt";
     self.buy = nil;
-    self.price = @"750";
+    self.price = @"1500";
     self.balcony = @"Y";
     self.size = @"52";
     self.rooms = @"3";

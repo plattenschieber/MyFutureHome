@@ -19,11 +19,16 @@
 #import "PGSideDrawerController.h"
 #import "MFHAdvertCell.h"
 #import "MFHSession.h"
+#import "MFHAdvertFlowLayout.h"
 
 
 @interface MFHCatalogueViewController ()
 
+@property (nonatomic, strong) MFHAdvertFlowLayout *mfhlayout;
+
 @end
+
+static NSString *ItemIdentifier = @"ProductCell";
 
 @implementation MFHCatalogueViewController
 
@@ -31,12 +36,24 @@
     [super viewDidLoad];
     [self setupLeftMenuButton];
     
-//    [self createProduct ];
+    if([MFHSession isDataThere])[self createCatalogue];
     
 }
 
--(void) createProduct
+- (void) loadView
 {
+    self.mfhlayout = [[MFHAdvertFlowLayout alloc] init];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.mfhlayout];
+    [self.collectionView registerClass:[MFHAdvertCell class] forCellWithReuseIdentifier:ItemIdentifier];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    self.collectionView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+}
+
+-(void) createCatalogue
+{
+    
     //Get first pageContent and draw uiControls
     ALSPage *page =   [[[MFHSession getALSResponse] pages ]objectAtIndex:0];
     if ([MFHSession getAdverts])
@@ -44,39 +61,61 @@
     else
         [MFHSession setAdverts];
     
-    // watch out for all
-    for (ALSPageContent *content in [page contents])
+    for (ALSPageContent *product in [page contents])
     {
+        [self createProduct: product];
+    }
+    
+    NSLog(@"No.Adverts: %i", [MFHSession getAdverts].count);
+}
+
+-(void) createProduct: (ALSPageContent*) content
+{
+    // watch out for all
+    
         MFHAdvert *advert = [[MFHAdvert alloc ]init];
         advert.posX = content.position.x;
         advert.posY = content.position.y;
         advert.width = content.position.width;
         advert.height = content.position.height;
-        
-        for (ALSDocumentElement* element in content.documentElements)
+    
+    
+        for (ALSDocumentElement* element in [content documentElements])
         {
             if([[element elementType] isEqualToString:@"headline"])
             {
                 if ([[element elementClass] isEqualToString:@"headline"])
-                    advert.name = [element.text stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
-                if ([[element elementClass] isEqualToString:@"subheadline"])
-                    advert.desc = element.text;
+                {
+                    NSString *tmpResult = [element.text stringByReplacingOccurrencesOfString:@"+" withString:@" "];
+                    advert.name = [tmpResult stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                }
             }
             if([[element elementClass] isEqualToString:@"image"])
             {
                 for (ALSDocumentElementContent* contentElement in element.contents)
                 {
-                    if([[contentElement url] isEqualToString:@"link"])
+                    if([[contentElement elementClass] isEqualToString:@"link"])
                     {
-                        advert.imageUrl = [contentElement.url stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+                        advert.linkUrl = contentElement.url;
+                    }
+                    for (ALSDocumentElementSubContent* subContentElement in contentElement.contents)
+                    {
+                        if ([[subContentElement elementClass] isEqualToString:@"image"])
+                        {
+                            advert.imageUrl = subContentElement.url;
+                            NSString* style = subContentElement.style;
+                            NSRegularExpression *findWidthHeight = [NSRegularExpression regularExpressionWithPattern:@"(\\d+)" options:NSRegularExpressionCaseInsensitive error:nil];
+                            
+                            NSArray *matches= [findWidthHeight matchesInString:style options:0 range:NSMakeRange(0, [style length])];
+                            advert.imageWidth = [[style substringWithRange:[matches[0] range]] intValue];
+                            advert.imageHeight = [[style substringWithRange:[matches[1] range]] intValue];
+                        }
                     }
                 }
             }
         }
         // add advert to our array
         [[MFHSession getAdverts] addObject:advert];
-    }
-    NSLog(@"No.Adverts: %i", [MFHSession getAdverts].count);
 }
 
 - (void)setupLeftMenuButton {
@@ -90,12 +129,12 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *) view
 {
-    return [MFHSession getAdverts].count;
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section
 {
-    return 1;
+    return [MFHSession getAdverts].count;
 }
 
 
@@ -103,19 +142,31 @@
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     MFHAdvertCell *cell = [view
-                                  dequeueReusableCellWithReuseIdentifier:@"ProductCell"
+                                  dequeueReusableCellWithReuseIdentifier:ItemIdentifier
                                   forIndexPath:indexPath];
     if ([MFHSession getAdverts].count > 0)
     {
-        MFHAdvert *advert = [[MFHSession getAdverts] objectAtIndex:indexPath.section];
+        // add a label
+        MFHAdvert *advert = [[MFHSession getAdverts] objectAtIndex:indexPath.row];
+        cell.advertLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, advert.width, 50.0)];
         [cell.advertLabel setText:advert.name];
-        NSURL *test = [NSURL URLWithString:advert.imageUrl];
-        [cell.advertPicture setImageWithURL:test];
+        cell.advertLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        cell.advertLabel.numberOfLines = 2;
+        cell.advertLabel.font = [UIFont systemFontOfSize:12.0];
         
+        [cell.contentView addSubview:cell.advertLabel];
+        // add a picture
+        cell.advertPicture = [[UIImageView alloc] init];
+        NSData *data = [NSData dataWithContentsOfURL:advert.imageUrl];
+        cell.advertPicture = [[UIImageView alloc] initWithImage:[[UIImage alloc] initWithData:data]];
+        // move the picture a bit down
+        cell.advertPicture.frame = CGRectMake(0, 50, .75*advert.imageWidth, .75*advert.imageHeight);
+        [cell.contentView addSubview:cell.advertPicture];
     }
     
     return cell;
 }
+
 
 /*
 #pragma mark - Navigation

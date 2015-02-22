@@ -14,7 +14,7 @@
 @property NSString *elementType;
 @property NSString *text;
 @property NSString *style;
-@property NSString *url;
+@property NSURL *url;
 
 
 @end

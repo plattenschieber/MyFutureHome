@@ -12,6 +12,7 @@
 @interface PGSideDrawerController ()
 
 @property(nonatomic) int currentIndex;
+@property NSArray *viewControllerIdentifiers;
 @end
 
 @implementation PGSideDrawerController
@@ -21,15 +22,9 @@
 
     self.firstViewController = [[MFHCatalogueViewController alloc] init];
     self.currentIndex = 0;
+    self.viewControllerIdentifiers = @[@"CATALOGUE_VIEW_CONTROLLER", @"LAST_WATCHED_VIEW_CONTROLLER", @"FAVOURITES_VIEW_CONTROLLER", @"PROFILE_VIEW_CONTROLLER", @"CREATE_PROFILE_VIEW_CONTROLLER", @"MANAGE_PROFILES_VIEW_CONTROLLER", @"HELP_VIEW_CONTROLLER"];
 }
 
-// call the createProduct 
-- (IBAction)ActionButton:(id)sender {
-    NSLog(@"A1");
-    [[self triggerButton] addTarget:self.firstViewController
-                   action:@selector(createProduct)
-         forControlEvents:UIControlEventTouchUpInside];
-}
 
 #pragma mark - Table View Delegate
 
@@ -38,18 +33,14 @@
         [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
         return;
     }
-
-    UIViewController *centerViewController;
-    switch (indexPath.row) {
-        case 0:
-            centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FIRST_TOP_VIEW_CONTROLLER"];
-            break;
-        case 1:
-            centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SECOND_TOP_VIEW_CONTROLLER"];
-            break;
-        default:
-            break;
+    
+    if (indexPath.row == self.viewControllerIdentifiers.count)
+    {
+        NSLog(@"Close App.");
+        exit(0);
     }
+
+    UIViewController *centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:[self.viewControllerIdentifiers objectAtIndex:indexPath.row]];
 
     if (centerViewController) {
         self.currentIndex = indexPath.row;

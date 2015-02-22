@@ -12,7 +12,7 @@
 
 @property NSString *elementClass;
 @property NSString *elementType;
-@property NSString *url;
+@property NSURL *url;
 @property NSString *target;
 @property NSArray *contents;
 

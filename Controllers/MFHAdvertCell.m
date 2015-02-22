@@ -10,4 +10,10 @@
 
 @implementation MFHAdvertCell
 
+- (id)initWithFrame:(CGRect)frame
+{
+    if (!(self = [super initWithFrame:frame])) return nil;
+    return self;
+}
+
 @end
