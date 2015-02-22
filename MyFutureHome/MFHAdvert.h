@@ -21,8 +21,8 @@
 @property NSString *size;
 @property NSString *type;
 @property NSString *rooms;
-@property NSString *imageUrl;
-@property NSString *linkUrl;
+@property NSURL *imageUrl;
+@property NSURL *linkUrl;
 @property NSString *lat;
 @property NSString *lng;
 @property NSString *created;
