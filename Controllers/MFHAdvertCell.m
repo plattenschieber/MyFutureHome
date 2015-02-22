@@ -13,9 +13,6 @@
 - (id)initWithFrame:(CGRect)frame
 {
     if (!(self = [super initWithFrame:frame])) return nil;
-    
-    self.backgroundColor = [UIColor cyanColor];
-    
     return self;
 }
 
