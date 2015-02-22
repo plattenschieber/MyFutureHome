@@ -31,5 +31,7 @@
 @property int width;
 @property int posX;
 @property int posY;
+@property int imageHeight;
+@property int imageWidth;
 
 @end

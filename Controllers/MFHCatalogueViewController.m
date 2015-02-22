@@ -94,8 +94,18 @@ static NSString *ItemIdentifier = @"ProductCell";
                 for (ALSDocumentElementContent* contentElement in element.contents)
                 {
                     if([[contentElement url] isEqualToString:@"link"])
+                    for (ALSDocumentElementSubContent* subContentElement in contentElement.contents)
                     {
-                        advert.imageUrl = [contentElement.url stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+                        if ([[subContentElement elementClass] isEqualToString:@"image"])
+                        {
+                            advert.imageUrl = subContentElement.url;
+                            NSString* style = subContentElement.style;
+                            NSRegularExpression *findWidthHeight = [NSRegularExpression regularExpressionWithPattern:@"(\\d+)" options:NSRegularExpressionCaseInsensitive error:nil];
+                            
+                            NSArray *matches= [findWidthHeight matchesInString:style options:0 range:NSMakeRange(0, [style length])];
+                            advert.imageWidth = [[style substringWithRange:[matches[0] range]] intValue];
+                            advert.imageHeight = [[style substringWithRange:[matches[1] range]] intValue];
+                        }
                     }
                 }
             }
@@ -136,9 +146,15 @@ static NSString *ItemIdentifier = @"ProductCell";
         cell.advertLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, advert.width, 15.0)];
         [cell.advertLabel setText:advert.name];
         NSURL *test = [NSURL URLWithString:advert.imageUrl];
-        [cell.advertPicture setImageWithURL:test];
         [cell.contentView addSubview:cell.advertLabel];
         
+        // add a picture
+        cell.advertPicture = [[UIImageView alloc] init];
+        NSData *data = [NSData dataWithContentsOfURL:advert.imageUrl];
+        cell.advertPicture = [[UIImageView alloc] initWithImage:[[UIImage alloc] initWithData:data]];
+        // move the picture a bit down
+        cell.advertPicture.frame = CGRectMake(0, 50, .75*advert.imageWidth, .75*advert.imageHeight);
+        [cell.contentView addSubview:cell.advertPicture];
     }
     
     return cell;
