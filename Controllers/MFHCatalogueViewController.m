@@ -85,15 +85,19 @@ static NSString *ItemIdentifier = @"ProductCell";
             if([[element elementType] isEqualToString:@"headline"])
             {
                 if ([[element elementClass] isEqualToString:@"headline"])
-                    advert.name = [element.text stringByReplacingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
-                if ([[element elementClass] isEqualToString:@"subheadline"])
-                    advert.desc = element.text;
+                {
+                    NSString *tmpResult = [element.text stringByReplacingOccurrencesOfString:@"+" withString:@" "];
+                    advert.name = [tmpResult stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                }
             }
             if([[element elementClass] isEqualToString:@"image"])
             {
                 for (ALSDocumentElementContent* contentElement in element.contents)
                 {
-                    if([[contentElement url] isEqualToString:@"link"])
+                    if([[contentElement elementClass] isEqualToString:@"link"])
+                    {
+                        advert.linkUrl = contentElement.url;
+                    }
                     for (ALSDocumentElementSubContent* subContentElement in contentElement.contents)
                     {
                         if ([[subContentElement elementClass] isEqualToString:@"image"])
@@ -142,12 +146,15 @@ static NSString *ItemIdentifier = @"ProductCell";
                                   forIndexPath:indexPath];
     if ([MFHSession getAdverts].count > 0)
     {
+        // add a label
         MFHAdvert *advert = [[MFHSession getAdverts] objectAtIndex:indexPath.row];
-        cell.advertLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, advert.width, 15.0)];
+        cell.advertLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, advert.width, 50.0)];
         [cell.advertLabel setText:advert.name];
-        NSURL *test = [NSURL URLWithString:advert.imageUrl];
-        [cell.contentView addSubview:cell.advertLabel];
+        cell.advertLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        cell.advertLabel.numberOfLines = 2;
+        cell.advertLabel.font = [UIFont systemFontOfSize:12.0];
         
+        [cell.contentView addSubview:cell.advertLabel];
         // add a picture
         cell.advertPicture = [[UIImageView alloc] init];
         NSData *data = [NSData dataWithContentsOfURL:advert.imageUrl];
